@@ -1,0 +1,11 @@
+auto: true
+
+markdown: rdiscount
+pygments: true
+paginate: 8
+permalink: /:title
+
+title: 一只鱼在的传说
+author: MurphyL
+url: http://about.cijian.us
+feed: /atom.xml

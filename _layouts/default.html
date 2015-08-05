@@ -1,0 +1,41 @@
+
+<!DOCTYPE html><!--[if lt IE 7 ]> <html class="ie6" dir="ltr" lang="zh-CN" itemscope itemtype="http://schema.org/WebPage"> <![endif]-->
+<!--[if IE 7 ]> <html class="ie7" dir="ltr" lang="zh-CN" itemscope itemtype="http://schema.org/WebPage"> <![endif]-->
+<!--[if IE 8 ]> <html class="ie8" dir="ltr" lang="zh-CN" itemscope itemtype="http://schema.org/WebPage"> <![endif]-->
+<!--[if IE 9 ]> <html class="ie9" dir="ltr" lang="zh-CN" itemscope itemtype="http://schema.org/WebPage"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--> <html dir="ltr" lang="zh-CN" itemscope itemtype="http://schema.org/WebPage"> <!--<![endif]-->
+<head prefix="og:http://ogp.me/ns#">
+    <meta charset="utf-8" />
+    <title>{% if page.title %}{{ page.title }} | {% endif %}{{ site.title }}</title>
+    <meta name="author" content="{{ site.author }}" />
+    <meta name="description" content="{{ site.title }}" />
+    <meta name="renderer" content="webkit">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <meta name="robots" content="index, follow"/>
+    <meta name="referrer" content="always">
+    <meta http-equiv="cleartype" content="on" />
+    <meta http-equiv="Cache-Control" content="no-transform" />
+    <meta http-equiv="Cache-Control" content="no-siteapp" /> <!-- 禁止百度搜索转换网页 -->
+    <meta name="google" content="notranslate"/> <!-- 关闭chrome浏览器下翻译插件 -->
+    <meta name="format-detection" content="telphone=no, email=no"/><!-- 忽略页面中的数字识别为电话，忽略email识别 -->
+    <meta property="og:site_name" content="{{ site.title }}" />
+    <meta property="og:url" content="http://cijian.us" />
+    <!-- <meta property="og:image" content="http://cijian.us/wp-content/themes/pale/assets/img/icon.png" /> -->
+    <meta property="og:locale" content="zh_CN" />
+    <!-- <meta property="og:description" content="养心如葵，素心如兰"> -->
+    <meta name="twitter:title" content="{{ site.author }}">
+    <meta name="twitter:site" content="@MurphyLuo">
+    <meta name="twitter:creator" content="@MurphyLuo">
+    <link rel="profile" href="http://gmpg.org/xfn/11" />
+    <link rel="canonical" href="http://cijian.us" />
+    <link rel="stylesheet" href="http://cijian.qiniudn.com/css/font-awesome.min.css" type="text/css" />
+    <link rel="shortcut icon" href="/assets/img/ico.png" type="image/x-icon" />
+</head>
+<body>
+<div id="container">
+
+    {{ content }}
+
+</div>
+</body>
+</html>
