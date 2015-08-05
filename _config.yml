@@ -5,7 +5,8 @@ pygments: true
 paginate: 8
 permalink: /:title
 
-title: 一只鱼在的传说
+title: 此间我们
+description: 养心如葵，素心如兰
 author: MurphyL
-url: http://about.cijian.us
+url: http://murphyl.github.io/cijian.us/
 feed: /atom.xml
