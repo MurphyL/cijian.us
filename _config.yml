@@ -3,7 +3,8 @@ title: 此间·我们
 email: im@cijian.us
 description: 缅怀那些我们在一起的日子~
 baseurl: "" # the subpath of your site, e.g. /blog/
-url: "http://192.168.33.10:4000" # the base hostname & protocol for your site
+paginate: 1
+paginate_path: "/page/:num"
 twitter_username: MurphyLuo
 github_username:  MurphyL
 

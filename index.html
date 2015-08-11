@@ -1,17 +1,39 @@
 ---
 layout: default
 ---
-<div class="home">
-  <h1 class="page-heading">Posts</h1>
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
-</div>
+<section id="main">
+    <div class="container">
+        <div class="row">
+        	<div id="index" class="col-md-12">{% for post in paginator.posts %}
+        		<div class="note">
+        	        	<h2 class="lead">
+					<a href="{{ post.url | prepend: site.baseurl }}" title="{{ post.title }}" rel="bookmark" lazyload="1"  target="_blank">
+						{{ post.title }}
+					</a>
+				</h2>
+	                	<p>{{ post.content | strip_html | strip_newlines | truncate: 160 }}</p>
+                	</div>
+		{% endfor %}</div>
+		<div id="wp-pagenavi" class="text-center">
+			{% if paginator.page > 3 %}
+			<a href="/" title="首页"> &lt;&lt; </a>
+			{% else %}{% if paginator.page != 1 %}{% if paginator.previous_page == 1 %}
+			<a href="/" title="上一页面"> &lt; </a>
+			{% else %}
+                        <a href="{{ paginator.previous_page_path }}" title="上一页"> &lt; </a>
+                        {% endif %}{% endif %}{% endif %}
+			<a href="javascript:;" class="current pn">{{ paginator.page }}</a>
+			{% if paginator.next_page %}{% if (paginator.total_pages - paginator.page) > 0 %}
+			<a href="{{ paginator.next_page_path }}" class="pn" title="下一页">{{ paginator.next_page }}</a>
+			{% endif %}
+			<a href="/page/{{ paginator.total_pages }}" title="末页"> &gt;&gt; </a>
+			{% endif %}
+			{% for count in (1..paginator.total_pages) %}
+				{{ count }}，
+			{% endfor %}
+			{{ (paginator.total_pages - 3) }}
+		</div>
+            </div>
+        </div>
+    </div>
+</section>

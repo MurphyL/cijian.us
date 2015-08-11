@@ -5873,7 +5873,7 @@ h2.notes img {
 
 #title .cloud {
     position: absolute;
-    background: url(assets/img/cloud.svg) top left no-repeat;
+    background: url(/img/cloud.svg) top left no-repeat;
     width: 150px;
     height: 45px;
     -webkit-transition: all 1s ease-in-out;
