@@ -1,16 +1,15 @@
-auto: true
+# Site settings
+title: 此间·我们
+email: im@cijian.us
+description: 缅怀那些我们在一起的日子~
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "http://192.168.33.10:4000" # the base hostname & protocol for your site
+twitter_username: MurphyLuo
+github_username:  MurphyL
 
-markdown: rdiscount
-pygments: true
-paginate: 8
-permalink: /:title
+# Build settings
+markdown: kramdown
 
-title: 此间我们
-description: 养心如葵，素心如兰
 author: MurphyL
-email: "im@murphyl.com"
-url: http://pale.cijian.us
 favico: /assets/img/icon.png
 color: "#E0EBE8"
-twitter: "@MurphyLuo"
-feed: /atom.xml
