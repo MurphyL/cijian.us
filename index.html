@@ -20,7 +20,7 @@ layout: default
 			{% else %}{% if paginator.page != 1 %}{% if paginator.previous_page == 1 %}
 			<a href="/" title="上一页面"> &lt; </a>
 			{% else %}
-                        <a href="{{ paginator.previous_page_path }}" title="上一页"> &lt; </a>
+                        <a href="{{ paginator.previous_page_path }}" title="上一页">{{ paginator.next_page }}</a>
                         {% endif %}{% endif %}{% endif %}
 			<a href="javascript:;" class="current pn">{{ paginator.page }}</a>
 			{% if paginator.next_page %}{% if (paginator.total_pages - paginator.page) > 0 %}
@@ -28,9 +28,6 @@ layout: default
 			{% endif %}
 			<a href="/page/{{ paginator.total_pages }}" title="末页"> &gt;&gt; </a>
 			{% endif %}
-			{% for count in (1..paginator.total_pages) %}
-				{{ count }}，
-			{% endfor %}
 			{{ (paginator.total_pages - 3) }}
 		</div>
             </div>
