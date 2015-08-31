@@ -1,10 +1,12 @@
 {
-	"作品@非鱼" : [{
+	"name" : "作品@非鱼",
+	"links" : [{
 			"name" : "TaylorSwift.fm",
 			"link" : "http://taylorswift.fm/"
 		}
 	],
-	"友情@我们" : [{
+	"name" : "友情@我们",
+	"links" : [{
 			"name" : "D7元素",
 			"link" : "http://www.ise7en.me/",
 			"desc" : "D7℃ Zone’s – 精彩 7 分享！"
@@ -46,7 +48,8 @@
 			"desc" : "一蓑烟雨看苍生，半壶浊酒笑红尘"
 		}
 	],
-	"链接@此间" : [{
+	"name" : "链接@此间",
+	"links" : [{
 			"name" : "Aladd",
 			"link" : "http://aladd.net/",
 			"desc" : "高品质设计、艺术、摄影、教程、插画类的分享平台"
