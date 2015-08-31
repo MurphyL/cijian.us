@@ -4,8 +4,4 @@ title: 友链
 permalink: /links/
 ---
 
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](http://jekyllrb.com/)
-
-You can find the source code for the Jekyll new theme at: [github.com/jglovier/jekyll-new](https://github.com/jglovier/jekyll-new)
-
-You can find the source code for Jekyll at [github.com/jekyll/jekyll](https://github.com/jekyll/jekyll)
+个人会根据喜好主动增加友链。本质上说，私以为友链代表的是友情，是认可，而非凭空的一句话——“换个链接”。
