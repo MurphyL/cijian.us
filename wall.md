@@ -1,6 +1,6 @@
 ---
 layout: page
-title: 墙 | 此间·我们
+title: 墙
 permalink: /wall/
 ---
 
