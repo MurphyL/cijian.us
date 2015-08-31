@@ -8,8 +8,6 @@ paginate_path: "/page/:num"
 twitter_username: MurphyLuo
 github_username:  MurphyL
 
-permalink: :categories/:title
-
 # Build settings
 markdown: kramdown
 
