@@ -8,11 +8,13 @@ permalink: /links/
 
 <ul class="note links">
   {% for link in site.data.links %}
-    <h3>{{ link.name }}</h3>
-    <ul class="blogroll">
-      {% for item in link.items %}
-        <li><a href="{{item.link}}" title="{{ item.desc }}">{{ item.name }}</a></li>
-      {% endfor %}
-    </ul>
+    <li class="linkcat">
+      <h3>{{ link.name }}</h3>
+      <ul class="blogroll">
+        {% for item in link.items %}
+          <li><a href="{{item.link}}" title="{{ item.desc }}">{{ item.name }}</a></li>
+        {% endfor %}
+      </ul>
+    </li>
   {% endfor %}
 </ul>
