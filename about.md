@@ -1,6 +1,6 @@
 ---
 layout: page
-title: About
+title: 关于 | {{ site.title }}
 permalink: /about/
 ---
 
