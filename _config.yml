@@ -7,7 +7,7 @@ paginate: 10
 paginate_path: "/page/:num"
 twitter_username: MurphyLuo
 github_username:  MurphyL
-permalinks: /:title
+permalinks: "/:title"
 
 # Build settings
 markdown: kramdown
