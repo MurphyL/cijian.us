@@ -1,7 +1,7 @@
 [
 	{
 		"name" : "作品@非鱼",
-		"item" : [{
+		"items" : [{
 				"name" : "TaylorSwift.fm",
 				"link" : "http://taylorswift.fm/",
 				"desc" : ""
@@ -9,7 +9,7 @@
 		]
 	}, {
 		"name" : "友情@我们",
-		"item" : [{
+		"items" : [{
 				"name" : "D7元素",
 				"link" : "http://www.ise7en.me/",
 				"desc" : "D7℃ Zone’s – 精彩 7 分享！"
@@ -53,7 +53,7 @@
 		]
 	}, {
 		"name" : "链接@此间",
-		"item" : [{
+		"items" : [{
 				"name" : "Aladd",
 				"link" : "http://aladd.net/",
 				"desc" : "高品质设计、艺术、摄影、教程、插画类的分享平台"
