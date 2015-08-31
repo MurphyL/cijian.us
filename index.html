@@ -17,7 +17,7 @@ layout: default
 		<div id="wp-pagenavi" class="text-center">
 			{% if paginator.page > 3 %}
 			<a href="/" title="首页"> &lt;&lt; </a>
-			{% else %}{% if paginator.page > 0 %}
+			{% else %}{% if paginator.page > 1 %}
                         <a href="{{ paginator.previous_page_path }}" title="上一页">{{ paginator.previous_page }}</a>
                         {% endif %}{% endif %}
 			<a href="javascript:;" class="current pn">{{ paginator.page }}</a>
