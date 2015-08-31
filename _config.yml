@@ -10,7 +10,8 @@ github_username:  MurphyL
 
 # Build settings
 markdown: kramdown
-
+  input: GFM
+  
 author: MurphyL
 favico: /assets/img/icon.png
 color: "#E0EBE8"
