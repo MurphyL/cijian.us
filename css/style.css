@@ -5694,7 +5694,6 @@ header.nav-top {
     header.nav-top {
         opacity: 0;
         position: fixed;
-        -webkit-transform: translate3d(0, -130px, 0);
         -webkit-transition: .5s;
         transition: .5s;
         top: 0
@@ -5718,7 +5717,6 @@ header.nav-fixed {
         -webkit-perspective: 1000;
         overflow: hidden;
         -webkit-transition-timing-function: ease-in-out;
-        -webkit-transform: translate3d(0, 0, 0);
         background: #fff
     }
 }
