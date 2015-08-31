@@ -1,6 +1,6 @@
 ---
 layout: page
-title: 链接 | 此间·我们
+title: 链接
 permalink: /links/
 ---
 
