@@ -5,9 +5,13 @@ description: 缅怀那些我们在一起的日子~
 baseurl: "" # the subpath of your site, e.g. /blog/
 paginate: 10
 paginate_path: "/page/:num"
+author: MurphyL
 twitter_username: MurphyLuo
 github_username:  MurphyL
-permalinks: "/:title"
+permalinks: none
+
+favico: /assets/img/icon.png
+color: "#E0EBE8"
 
 # Build settings
 markdown: kramdown
@@ -28,7 +32,3 @@ kramdown:
     coderay_tab_width:         4
     coderay_bold_every:        10
     coderay_css:               style
-  
-author: MurphyL
-favico: /assets/img/icon.png
-color: "#E0EBE8"
