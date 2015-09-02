@@ -13,29 +13,29 @@ categories: 技术 前端 NodeJS JS JavaScript
 
 下面是验证 NodeJS 的安装：打开命令终端（CMD），输入命令 `node -v`，如看到 `v0.10.xx` 的返回结果，那么准备工作已经完成了。最后就是安装 Serve，安装组件使用的是 NodeJS 的包管理器 npm，具体的安装过程是执行下面这条命令：
 
-{% highlight shell %}
+```shell
     npm install -g serve
-{% endhighlight %}
+```
 
 Linux 下可能需要 sudo，具体看你的安装 NodeJS 的位置。
 
 因为国情的原因，安装可能得耗上大几分钟。有心折腾的朋友可以使用我大 Taobao 的 npm 镜像仓库。也就是需要多安装一个 Package，安装命令如下：
 
-{% highlight shell %}
+```shell
     npm install cnpm -g --registry=https://registry.npm.taobao.org
-{% endhighlight %}
+```
 
 那么安装 Serve 的安装命令就需要相应的换成：
 
-{% highlight shell %}
+```shell
     cnpm install -g serve
-{% endhighlight %}
+```
 
 最后就是具体的使用方法。Serve 是个命令行工具，所以这里仍得使用命令终端（CMD）。在终端（CMD）里打开你要共享的目录，执行命令：
 
-{% highlight shell %}
+```shell
     serve
-{% endhighlight %}
+```
 
 对，就这样的五个字母，世界一下子就美妙了起来。Serve 启动为 Web 服务的默认端口为 `3000`，若需要玩定制的朋友请`serve --help`。
 
