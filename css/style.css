@@ -6817,7 +6817,9 @@ h1.im-sean {
 #article p {
     padding-bottom: 1em;
 }
-
+#article.poem p {
+    text-align: center;
+}
 /** 文章页 **/
 
 .linkcat {
