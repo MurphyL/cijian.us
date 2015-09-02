@@ -605,7 +605,7 @@ abbr.initialism {
 
 blockquote {
     padding: 10px 20px;
-    margin: 0 0 20px;
+    margin: 0;
     border-left: 5px solid #eee
 }
 
@@ -6819,6 +6819,12 @@ h1.im-sean {
 }
 #article.poem p {
     text-align: center;
+}
+#article.poem p {
+    text-align: center;
+}
+#article.poem blockquote p {
+    text-align: left;
 }
 /** 文章页 **/
 
