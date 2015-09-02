@@ -41,7 +41,7 @@ Linux 下可能需要 sudo，具体看你的安装 NodeJS 的位置。
 
 因为是基于 NodeJS，所以 Serve 能够友好支持Jade、Stylus 等动态特性，实在是一款不可多得的前端工具。
 
-结语
+#### 结语
 
 > NodeJS 有很多的美好而强大的东西，值得我们去探索。比如：  `Grunt`、  `bower`、  `Yeoman`... 期待我们的下一次会面吧！
 
