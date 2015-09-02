@@ -6823,7 +6823,7 @@ h1.im-sean {
 #article.poem p {
     text-align: center;
 }
-#article.poem blockquote p {
+#article blockquote p {
     padding-bottom: 0;
     text-align: left;
 }
