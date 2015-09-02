@@ -6658,6 +6658,7 @@ footer .footer-list a:hover {
 
 .note.excerpt h2 {
     margin-bottom: 0;
+    padding-bottom: 0.5em;
     text-align: left;
 }
 
