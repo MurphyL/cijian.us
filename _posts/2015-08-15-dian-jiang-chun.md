@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: poem
 title:  "点绛唇·远霞平湖"
 date:   2015-08-15 08:45:05
 categories: 诗歌 心情
@@ -27,3 +27,5 @@ YY打住，
 遥祝如初心。
 登台临高处，
 守一叙前情。
+
+> 测试
