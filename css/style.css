@@ -6651,15 +6651,13 @@ footer .footer-list a:hover {
     padding: 0;
     margin: 0 0 1em;
     text-overflow: ellipsis;
-    text-align: center;
     overflow: hidden;
     white-space: nowrap;
 }
 
-.note.excerpt h2 {
+.excerpt h2 {
     margin-bottom: 0;
     padding-bottom: 0.5em;
-    text-align: left;
 }
 
 @media (min-width: 992px) {
