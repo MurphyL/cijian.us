@@ -21,7 +21,9 @@ layout: default
 			{% if paginator.page > 1 %}
                         <a href="{{ paginator.previous_page_path }}" title="上一页">{{ paginator.previous_page }}</a>
                         {% endif %}
+                        {% if paginator.page %}
 			<a href="javascript:;" class="current pn">{{ paginator.page }}</a>
+			{% endif %}
 			{% if paginator.next_page %}{% if (paginator.total_pages - paginator.page) > 0 %}
 			<a href="{{ paginator.next_page_path }}" class="pn" title="下一页">{{ paginator.next_page }}</a>
 			{% endif %}
