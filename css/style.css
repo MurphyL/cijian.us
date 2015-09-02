@@ -6656,6 +6656,11 @@ footer .footer-list a:hover {
     white-space: nowrap;
 }
 
+.note.excerpt h2 {
+    margin-bottom: 0;
+    text-align: center;
+}
+
 @media (min-width: 992px) {
     .note h2 {
         font-size: 2.5em
