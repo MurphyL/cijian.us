@@ -6567,6 +6567,7 @@ h1.im-sean {
 }
 
 #article.prose:first-letter {
+    display: block;
     font-size: 1.4em;
 }
 
