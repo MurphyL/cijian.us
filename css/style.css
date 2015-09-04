@@ -6571,9 +6571,6 @@ h1.im-sean {
 
 #article.prose p {
     line-height: 1.6em;
-}
-
-#article.poem blockquote p, #article.prose p {
     text-indent: 2em;
 }
 
