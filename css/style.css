@@ -6566,15 +6566,6 @@ h1.im-sean {
     line-height: 1.6em;
 }
 
-#article.prose:first-line {
-    line-height: 2em;
-    vertical-align: bottom;
-}
-
-#article.prose:first-letter {
-    font-size: 1.4em;
-}
-
 #article blockquote p {
     padding-bottom: 0;
     text-align: left;
