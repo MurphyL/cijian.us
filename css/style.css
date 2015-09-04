@@ -6566,8 +6566,11 @@ h1.im-sean {
     line-height: 1.6em;
 }
 
-#article.prose:first-letter {
+#article.prose:first-line {
     line-height: 2em;
+}
+
+#article.prose:first-letter {
     font-size: 1.4em;
 }
 
