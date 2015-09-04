@@ -6563,10 +6563,11 @@ h1.im-sean {
 
 #article.prose p {
     text-indent: 2em;
-    line-height: 1.8em;
+    line-height: 1.6em;
 }
 
 #article.prose:first-letter {
+    vertical-align: top;
     font-size: 1.6em;
 }
 
