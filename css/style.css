@@ -6570,6 +6570,10 @@ h1.im-sean {
     line-height: 1.6em;
 }
 
+#article.song p {
+      margin-left: 25%;
+}
+
 #article blockquote p {
     padding-bottom: 0;
     text-align: left;
