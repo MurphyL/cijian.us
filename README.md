@@ -1,4 +1,7 @@
-# 此间，有哀思
+---
+layout: page
+title: 关于
+permalink: /about/
+---
 
-
-http://sacha.me/articles/jekyll-word-counts/
+### 此间，有哀思
