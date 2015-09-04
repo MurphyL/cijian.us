@@ -6561,6 +6561,10 @@ h1.im-sean {
     text-align: center;
 }
 
+#article.poem blockquote {
+    margin-bottom: 2em;
+}
+
 #article.poem blockquote p {
     text-align: left;
 }
