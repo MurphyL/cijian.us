@@ -1,5 +1,5 @@
 ---
-layout: song
+layout: poem
 title:  "题赠上海差旅同事（外两首）"
 date:   2015-03-28 10:34
 categories: 诗歌 心情
