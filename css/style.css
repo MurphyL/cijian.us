@@ -6563,10 +6563,11 @@ h1.im-sean {
 
 #article.prose p {
     text-indent: 2em;
+    line-height: 1.8em;
 }
 
 #article.prose:first-letter {
-    font-size: 2em;
+    font-size: 1.6em;
 }
 
 #article blockquote p {
