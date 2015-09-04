@@ -1,5 +1,3 @@
-2015-01-11-something_serious.md
-
 ---
 layout: post
 title:  "认真"
