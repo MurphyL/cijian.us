@@ -6825,9 +6825,11 @@ h1.im-sean {
 #article.poem p {
     text-align: center;
 }
-#article.poem p {
-    text-align: center;
+
+#article.prose p {
+    text-indent: 2em;
 }
+
 #article blockquote p {
     padding-bottom: 0;
     text-align: left;
