@@ -6568,11 +6568,11 @@ h1.im-sean {
 
 #article.prose:first-line {
     line-height: 2em;
+    vertical-align: bottom;
 }
 
 #article.prose:first-letter {
     font-size: 1.4em;
-    vertical-align: bottom;
 }
 
 #article blockquote p {
