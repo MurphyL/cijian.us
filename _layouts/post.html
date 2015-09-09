@@ -9,12 +9,19 @@
                 <div class="note">
                     <h2 class="text-center"><a href="{{ permalink }}" title="{{ page.title }}" rel="bookmark">{{ page.title }}</a></h2>
                     <div id="article" class="prose">{{ content }}</div>
-                </div><!--多说
+                </div>
                 <div class="note">
-                </div>-->
+                    <!-- 多说评论框 start -->
+                	<div class="ds-thread" 
+                	    data-thread-key="{{ page.id }}" 
+                	    data-title="{{ page.title }}" 
+                	    data-url="{{ permalink }}"></div>
+                <!-- 多说评论框 end -->
+                </div>
             </div>
         </div>
     </div>
 </section>
 <!-- foot start -->
+{% include duoshuo.html %}
 {% include footer.html %}
