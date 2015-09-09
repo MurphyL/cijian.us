@@ -4,6 +4,7 @@ email: im@cijian.us
 description: 缅怀那些我们在一起的日子~
 baseurl: "" # the subpath of your site, e.g. /blog/
 paginate: 10
+url: "http://cijian.us"
 permalink: "/:title"
 paginate_path: "/page/:num"
 author: MurphyL
