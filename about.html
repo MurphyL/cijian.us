@@ -1,0 +1,35 @@
+---
+layout: default
+title: 关于
+permalink: /about/
+---
+<!-- header end -->
+<section id="main">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="note">
+                    <h2 class="lead">
+                        <a href="{{ '/links' | prepend: site.baseurl }}" 
+                          class="ldb" title="{{ page.title }}" rel="bookmark">{{ page.title }}</a>
+                    </h2>
+                    <div id="article">
+                      ## 此间，有哀思
+                    </div>
+                </div>
+                <div class="note">
+                    <!-- 多说评论框 start -->
+                    <div class="ds-thread" 
+                        data-thread-key="about" 
+                        data-title="{{ page.title }}" 
+                        data-url="{{ '/about' | prepend: site.baseurl | prepend: site.url }}"></div>
+                    <!-- 多说评论框 end -->
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- foot start -->
+{% include duoshuo.html %}
+
+
