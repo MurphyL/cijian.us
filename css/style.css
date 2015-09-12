@@ -6601,7 +6601,7 @@ h1.im-sean {
     text-align: left;
 }
 
-.links ul {
+.links, .links ul {
     padding: 0;
 }
 
@@ -6610,7 +6610,6 @@ h1.im-sean {
 }
 
 .linkcat {
-    width: 90%;
     margin: 0 auto 40px;
 }
 
@@ -6618,21 +6617,8 @@ h1.im-sean {
     color: #aaa;
 }
 
-.wall ul {
-    padding: 0;
-}
 
-.wall li {
-    padding: 5px;
-    width: 52px;
-    height: 52px;
-    margin: 5px 7px;
-    border: 1px solid #fcfcfc;
-    overflow: hidden;
-    font-size: 0
-}
-
-.blogroll li, .wall li {
+.blogroll li {
     float: left;
 }
 
