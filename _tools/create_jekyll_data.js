@@ -40,7 +40,7 @@
 	];
 	fs.readFile(oldPostDataFile, "utf-8", function(err, data){
 		posts = eval(data);
-		var articles = ['Thread Key, 标题, URL'];
+		var articles = {};
 		for (var i = posts.length - 1; i >= 0; i--) {
 			
 			var post = posts[i];
@@ -59,30 +59,23 @@
 				categoryString += cat['_'] + ' ';
 			};
 			var contentHTML = post['content:encoded'][0];
-			var linesContent = striptags(contentHTML)/*.split(/\r\n|\n/);
-			var lines = [];
-			for (var k = 0; k < linesContent.length; k++) {
-				var line = linesContent[k];
-				if(/&nbsp;/.test(line)){
-					continue;
-				}
-				if(line.trim().length > 0){
-					lines.push(line.trim());
-				}
-			};*/
-			
+			var linesContent = striptags(contentHTML);		
 
 			var file_content = joins[0] + post['title'][0] + 
 							   joins[1] + post['wp:post_date'][0] + 
 							   joins[2] + categoryString.trim() + 
-							   joins[3] + /*lines.join('\r\n\r\n').trim()*/ linesContent.trim();
+							   joins[3] + linesContent.trim();
 			var fn_prefix = post['wp:post_date'][0].split(' ')[0] + '-';
 			var fn_seffix = post['wp:post_name'][0].replace(/_/g, '-');
 			fs.writeFile(path + fn_prefix + fn_seffix + ".md", file_content.trim(), "UTF-8");
-			articles.push(post['wp:post_id'][0] + ', ' + post['title'][0].replace(/,/g, ' ') + ', '
-				+ fn_seffix);
+			articles[post['wp:post_id'][0]] = {
+				id: post['wp:post_id'][0],
+				key: fn_seffix,
+				name: post['title'][0].replace(/,/g, ' ')
+
+			};
 		};
-		fs.writeFile(path + "post_data_new.csv", articles.join('\n'), "UTF-8");
+		fs.writeFile(path + "post_data_new.csv", JSON.stringify(articles), "UTF-8");
 		console.log('Done');
 	})
 
