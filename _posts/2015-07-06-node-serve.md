@@ -37,17 +37,6 @@ Linux 下可能需要 sudo，具体看你的安装 NodeJS 的位置。
     serve
 ```
 
-{% highlight js %}
-
-    alert(1);
-    if(1){
-        alert(2);
-    } else {
-        alert(3);
-    }
-    
-{% endhighlight  %}
-
 对，就这样的五个字母，世界一下子就美妙了起来。Serve 启动为 Web 服务的默认端口为 `3000`，若需要玩定制的朋友请`serve --help`。
 
 因为是基于 NodeJS，所以 Serve 能够友好支持Jade、Stylus 等动态特性，实在是一款不可多得的前端工具。
