@@ -38,12 +38,14 @@ Linux 下可能需要 sudo，具体看你的安装 NodeJS 的位置。
 ```
 
 {% highlight js %}
+
     alert(1);
     if(1){
         alert(2);
     } else {
         alert(3);
     }
+    
 {% endhighlight  %}
 
 对，就这样的五个字母，世界一下子就美妙了起来。Serve 启动为 Web 服务的默认端口为 `3000`，若需要玩定制的朋友请`serve --help`。
