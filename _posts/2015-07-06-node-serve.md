@@ -21,21 +21,30 @@ Linux 下可能需要 sudo，具体看你的安装 NodeJS 的位置。
 
 因为国情的原因，安装可能得耗上大几分钟。有心折腾的朋友可以使用我大 Taobao 的 npm 镜像仓库。也就是需要多安装一个 Package，安装命令如下：
 
-{% highlight bash %}
+```bash
     npm install cnpm -g --registry=https://registry.npm.taobao.org
-{% endhighlight %}
+```
 
 那么安装 Serve 的安装命令就需要相应的换成：
 
-{% highlight bash %}
+```bash
     cnpm install -g serve
-{% endhighlight %}
+```
 
 最后就是具体的使用方法。Serve 是个命令行工具，所以这里仍得使用命令终端（CMD）。在终端（CMD）里打开你要共享的目录，执行命令：
 
-{% highlight bash %}
+```bash
     serve
-{% endhighlight %}
+```
+
+```js
+    alert(1);
+    if(1){
+        alert(2);
+    } else {
+        alert(3);
+    }
+```
 
 对，就这样的五个字母，世界一下子就美妙了起来。Serve 启动为 Web 服务的默认端口为 `3000`，若需要玩定制的朋友请`serve --help`。
 
