@@ -43,5 +43,5 @@ Linux 下可能需要 sudo，具体看你的安装 NodeJS 的位置。
 
 #### 结语
 
-> NodeJS 有很多的美好而强大的东西，值得我们去探索。比如：  `Grunt`、  `bower`、  `Yeoman`... 期待我们的下一次会面吧！
+NodeJS 有很多的美好而强大的东西，值得我们去探索。比如：  `Grunt`、  `bower`、  `Yeoman`... 期待我们的下一次会面吧！
 
