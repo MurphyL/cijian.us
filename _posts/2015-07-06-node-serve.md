@@ -13,7 +13,7 @@ categories: 技术 前端 NodeJS JS JavaScript
 
 下面是验证 NodeJS 的安装：打开命令终端（CMD），输入命令 `node -v`，如看到 `v0.10.xx` 的返回结果，那么准备工作已经完成了。最后就是安装 Serve，安装组件使用的是 NodeJS 的包管理器 npm，具体的安装过程是执行下面这条命令：
 
-```{r, engine='bash', count_lines}
+```bash
     npm install -g serve
 ```
 
