@@ -14,7 +14,7 @@ github_username:  MurphyL
 favico: /assets/img/icon.png
 color: "#E0EBE8"
 
-markdown: redcarpet
+markdown: kramdown
 highlighter: pygments
 
 
