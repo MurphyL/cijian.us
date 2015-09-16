@@ -4,3 +4,95 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <title>{% if page.title %}{{ page.title }} | {% endif %} {{ site.title }}</title>
+  <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
+  <meta name="robots" content="index, follow"/>
+  <meta name="referrer" content="always">
+  <meta http-equiv="cleartype" content="on" />
+  <meta http-equiv="Cache-Control" content="no-transform" />
+  <meta http-equiv="Cache-Control" content="no-siteapp" />
+  <meta name="format-detection" content="telphone=no, email=no"/>
+  <meta name="google" content="notranslate"/>
+  <meta property="og:site_name" content="{{ site.title }}" />
+  <meta property="og:url" content="{{ site.url }}" />
+  <meta property="og:image" content="http://cijian.qiniudn.com/idra.png" />
+  <meta property="og:locale" content="zh_CN" />
+  <meta property="og:description" content="{{ site.description }}">
+  <link rel="shortcut icon" href="http://cijian.qiniudn.com/favicon.ico">
+  <link rel="icon" type="image/png" href="http://cijian.qiniudn.com/idra.png">
+  <link rel="profile" href="http://gmpg.org/xfn/11" />
+  <link rel="canonical" href="{{ site.url }}" />
+  <link rel="dns-prefetch" href="http://static.duoshuo.com"/>
+  <link rel="dns-prefetch" href="http://cijian.duoshuo.com"/>
+  <link rel="dns-prefetch" href="http://gravatar.duoshuo.com"/><!--
+  <link rel="sitemap" href="{{ '/sitemap.xml' | prepend: site.baseurl | prepend: site.url }}" />-->
+  <link rel="stylesheet" href="{{ '/css/style.css' | prepend: site.baseurl }}">
+  <link rel="stylesheet" href="{{ '/css/syntax.css' | prepend: site.baseurl }}">
+  <link rel="stylesheet" href="http://cijian.qiniudn.com/css/font-awesome.min.css">
+  <link rel="canonical" href="{{ page.url | prepend: site.baseurl | prepend: site.url }}">
+  <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ '/feed.xml' | prepend: site.baseurl | prepend: site.url }}" />
+  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+  <!--[if lt IE 9]>
+  <script src="/js/respond.min.js"></script>
+  <script src="/js/modernizr.js"></script>
+  <![endif]-->
+</head>
+<body class="home blog">
+<section id="top">
+    <header id="home-top" class="nav-top nav-fixed nav-root">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 col-xs-4">
+                    <h1 id="header-logo" class="image-text">
+                        <a href="{{ site.baseurl }}/">
+                            <span class="mask"></span>
+                            <span class="behind">此间·我们</span>
+                            <img src="http://cijian.qiniudn.com/idra.png" alt="此间·我们" lazyload="1" />
+                        </a>
+                    </h1>
+                </div>
+                <div class="col-md-8 col-xs-8">
+                    <nav id="top-nav">
+                        <ul class="nav-list">
+                          <li class="pn"><a href="{{ site.baseurl }}/links" class="ldb">友链</a></li>
+                          <li><a href="{{ site.baseurl }}/about" class="ldb" lazyload="1">关于</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+            <!-- / row -->
+        </div>
+        <!--/ container -->
+    </header>
+    <div class="masthead-wrap">
+        <div id="title">
+            <div class="container">
+                <div class="cloud left-cloud"></div>
+                <div class="cloud right-cloud"></div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div id="head-slider">
+                            <div class="slide-contents">
+                                <div class="slide">
+                                    <h1 class="im-sean">
+                                        <figure class="ldb">此间·我们</figure>
+                                    </h1>
+                                    <p class="header-desc ldb">养心如葵，素心如兰</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /col 24 -->
+                </div>
+                <!-- /row -->
+            </div>
+        </div>
+    </div>
+    <div class="masthead-wrap">
+        <div id="masthead">
+            <div id="earth-holder">
+                <img src="{{ site.baseurl }}/img/land.svg">
+            </div>
+        </div>
+    </div>
+</section>
