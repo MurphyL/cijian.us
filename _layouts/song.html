@@ -5,7 +5,7 @@
         <div class="row">
             <div class="col-md-12">
                 <div class="note">
-                    <h2 class="text-center"><a href="{{ permalink }}" title="{{ page.title }}" rel="bookmark">{{ page.title }}</a></h2>
+                    <h2 class="text-center"><a href="{{ page.url | prepend: site.baseurl | prepend: site.url }}" title="{{ page.title }}" rel="bookmark">{{ page.title }}</a></h2>
                     <div id="article" class="song">{{ content }}</div>
                 </div>
                 <div class="note">
@@ -13,7 +13,7 @@
                 	<div class="ds-thread" 
                 	    data-thread-key="{{ page.id | replace: '/', '' }}" 
                 	    data-title="{{ page.title }}" 
-                	    data-url="{{ permalink }}"></div>
+                	    data-url="{{ page.url | prepend: site.baseurl | prepend: site.url }}"></div>
                     <!-- 多说评论框 end -->
                 </div>
             </div>
