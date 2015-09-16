@@ -14,8 +14,6 @@ github_username:  MurphyL
 favico: /assets/img/icon.png
 color: "#E0EBE8"
 
-highlighter: rouge
-
 # Build settings
 markdown: kramdown
 kramdown:
