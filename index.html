@@ -5,14 +5,15 @@ layout: default
   <div class="container">
     <div class="row">
       <div id="index" class="col-md-12">{% for post in paginator.posts %}
-      <div class="note excerpt">
-        <h2 class="lead">
-	        <a href="{{ post.url | prepend: site.baseurl }}" title="{{ post.title }}" rel="bookmark" lazyload="1"  target="_blank">{{ post.title }}</a>
-      	</h2>
-      	<div id="article">
-          <p>{{ post.content | strip_html | strip_newlines | truncate: 160 }}</p>
-        </div>{% endfor %}
-    </div>
+        <div class="note excerpt">
+          <h2 class="lead">
+	    <a href="{{ post.url | prepend: site.baseurl }}" title="{{ post.title }}" rel="bookmark" lazyload="1"  target="_blank">{{ post.title }}</a>
+      	  </h2>
+      	  <div id="article">
+            <p>{{ post.content | strip_html | strip_newlines | truncate: 160 }}</p>
+          </div>{% endfor %}
+        </div>
+      </div>
     <div id="wp-pagenavi" class="text-center">
       {% if paginator.page > 3 %}
       <a href="/" title="首页"> &lt;&lt; </a>
