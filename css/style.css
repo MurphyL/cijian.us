@@ -1657,30 +1657,6 @@ article header h2 {
     font-weight: 400
 }
 
-#hi-me {
-    visibility: hidden
-}
-
-#i-can-help {
-    text-align: center;
-    padding: 0 0 4em
-}
-
-@media (min-width: 992px) {
-    #i-can-help {
-        padding: 3em 0 8em
-    }
-}
-
-#i-can-help article {
-    max-width: 600px;
-    margin: 0 auto
-}
-
-#i-can-help h3 {
-    padding-top: 1em
-}
-
 footer {
     background: #c5ded7;
     padding: 3em 0
