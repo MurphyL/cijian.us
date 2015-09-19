@@ -1,6 +1,6 @@
 <!-- 多说公共JS代码 start (一个网页只需插入一次) -->
 <script type="text/javascript">
-	(function(w, tag, embed) {
+	(function(w, embed) {
 		if(!document.querySelector('.ds-thread')){
 			return;
 		}
@@ -9,7 +9,7 @@
 		ds.type = 'text/javascript';ds.async = true;
 		ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + embed;
 		ds.charset = 'UTF-8';
-		(tag('head')[0]  || tag('body')[0]).appendChild(ds);
-	})(window, document.getElementsByTagName, '//static.duoshuo.com/embed.js');
+		(document.getElementsByTagName('head')[0]  || document.getElementsByTagName('body')[0]).appendChild(ds);
+	})(window, '//static.duoshuo.com/embed.js');
 </script>
 <!-- 多说公共JS代码 end -->
