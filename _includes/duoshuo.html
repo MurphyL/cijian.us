@@ -1,13 +1,15 @@
 <!-- 多说公共JS代码 start (一个网页只需插入一次) -->
 <script type="text/javascript">
-	var duoshuoQuery = {short_name:"cijian"};
-	(function() {
+	(function(w, tag, embed) {
+		if(!document.querySelector('.ds-thread')){
+			return;
+		}
+		w.duoshuoQuery = {short_name:"cijian"};
 		var ds = document.createElement('script');
 		ds.type = 'text/javascript';ds.async = true;
-		ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+		ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + embed;
 		ds.charset = 'UTF-8';
-		(document.getElementsByTagName('head')[0] 
-		 || document.getElementsByTagName('body')[0]).appendChild(ds);
-	})();
+		(tag('head')[0]  || tag('body')[0]).appendChild(ds);
+	})(window, document.getElementsByTagName, '//static.duoshuo.com/embed.js');
 </script>
 <!-- 多说公共JS代码 end -->
