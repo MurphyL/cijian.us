@@ -1695,6 +1695,41 @@ footer p {
     padding: 2.5em 0 0
 }
 
+footer .footer-list {
+    overflow: hidden;
+    margin: 0 auto;
+    max-width: 600px;
+    padding: 0;
+    font-size: 1.5em;
+}
+
+footer .footer-list li {
+    width: 50%;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    display: block;
+    float: left
+}
+
+@media (min-width: 992px) {
+    footer .footer-list li {
+        width: 25%;
+        padding: 0
+    }
+}
+
+footer .footer-list a {
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    color: #45b29a;
+    font-size: 1.5em
+}
+
+footer .footer-list a:hover {
+    color: #1a443b
+}
+
 #table {
     background: #7dcc93
 }
