@@ -18,7 +18,7 @@ $(function(){
     }
   });
   // 快捷键翻页控制
-  var navi = $('link[rel=pref],link[rel=pref]');
+  var navi = $('link[rel=prev],link[rel=next]');
   if(navi && navi.length > 0){
     $(document).keydown(function(e){
       var url;
