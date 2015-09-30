@@ -34,7 +34,9 @@
   <link rel="stylesheet" href="{{ '/css/syntax.css' | prepend: site.baseurl }}">-->
   <link rel="stylesheet" href="http://cijian.qiniudn.com/css/font-awesome.min.css">
   <link rel="canonical" href="{{ page.url | prepend: site.baseurl | prepend: site.url }}">
-  <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ '/feed.xml' | prepend: site.baseurl | prepend: site.url }}">
+  <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ '/feed.xml' | prepend: site.baseurl | prepend: site.url }}">{% if page.previous %}
+  <link rel="pref" href="{{ page.previous }}" />{% endif %}{% if page.previous %}
+  <link rel="next" href="{{ page.next }}" />{% endif %}
   <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
   <!--[if lt IE 9]>
   <script src="/js/respond.min.js"></script>
