@@ -1,11 +1,11 @@
 ---
 layout: null
 ---
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?>{{ pi = 1.0 }}
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">{% for post in site.posts limit:10 %}
   <url>
-    <loc>{{ post.url }}</loc>
-    <lastmod>{{ post.date }}</lastmod>
+    <loc>{{ post.url | prepend: site.baseurl | prepend: site.url  }}</loc>
+    <lastmod>{{ post.date | date_to_long_string }}</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>{% endfor %}
