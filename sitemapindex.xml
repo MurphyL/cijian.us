@@ -8,11 +8,11 @@ layout: null
     <lastmod>{{ post.date | date_to_long_string }}</lastmod>
   </sitemap>{% endfor %}
   <sitemap>
-    <loc>{{ 'about' | prepend: site.baseurl | prepend: site.url }}</loc>
+    <loc>{{ '/about' | prepend: site.baseurl | prepend: site.url }}</loc>
     <lastmod>25 May 2015</lastmod>
   </sitemap>
   <sitemap>
-    <loc>{{ 'links' | prepend: site.baseurl | prepend: site.url }}</loc>
+    <loc>{{ '/links' | prepend: site.baseurl | prepend: site.url }}</loc>
     <lastmod>25 May 2015</lastmod>
   </sitemap>
   <sitemap>

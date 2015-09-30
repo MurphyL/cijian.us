@@ -10,13 +10,13 @@ layout: null
     <priority>0.8</priority>
   </url>{% endfor %}
   <url>
-    <loc>{{ 'about' | prepend: site.baseurl | prepend: site.url }}</loc>
+    <loc>{{ '/about' | prepend: site.baseurl | prepend: site.url }}</loc>
     <lastmod>25 May 2015</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>{{ 'links' | prepend: site.baseurl | prepend: site.url }}</loc>
+    <loc>{{ '/links' | prepend: site.baseurl | prepend: site.url }}</loc>
     <lastmod>25 May 2015</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
