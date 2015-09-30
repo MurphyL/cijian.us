@@ -6,8 +6,8 @@ keywords: "诗歌, 回忆, JavaScript, Node, CSS, HTML, HTML5, PDF, PPT, design,
 baseurl: "" # the subpath of your site, e.g. /blog/
 paginate: 10
 url: "http://cijian.us"
-source: "https://github.com/MurphyL/Pale"
 permalink: "/:title"
+source: "https://github.com/MurphyL/Pale"
 paginate_path: "/page/:num"
 
 author:
