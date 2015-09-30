@@ -10,6 +10,16 @@
     font-family: LiDeBiao !important;
 }
 
+.clearfix:before,.clearfix:after{ 
+    content:""; 
+    display:table; 
+} 
+.clearfix:after{
+    clear:both;
+} 
+.clearfix{ 
+    *zoom:1;/*IE/7/6*/
+}
 
 /*!
  * Bootstrap v3.0.0
@@ -511,10 +521,6 @@ pre code {
     display: table
 }
 
-.row:after {
-    clear: both
-}
-
 .row:before, .row:after {
     content: " ";
     display: table
@@ -827,9 +833,6 @@ input[type=submit].btn-block, input[type=reset].btn-block, input[type=button].bt
 
 [data-toggle=buttons] > .btn > input[type=radio], [data-toggle=buttons] > .btn > input[type=checkbox] {
     display: none
-}
-.clearfix:after {
-    clear: both
 }
 
 .pull-right {
@@ -1900,7 +1903,6 @@ footer .footer-list a:hover {
 /** 文章页 **/
 
 .linkcat {
-    clear: both;
     margin-bottom: 2em;
 }
 
