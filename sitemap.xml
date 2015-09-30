@@ -1,14 +1,14 @@
 ---
-layout: default
+layout: null
 ---
 <?xml version="1.0" encoding="UTF-8"?>
 <sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <sitemap><!-- {{ paginator.total_pages }} -->
         <loc>http://www.ipc.me/sitemaps/category-1.xml</loc>
         <lastmod>2015-09-30T05:00:10+08:00</lastmod>
-    </sitemap>{% for page in (1..paginator.total_pages) %}
+    </sitemap>{% for post in site.posts %}
     <sitemap>
-        <loc>{{ page }}</loc>
+        <loc>{{ post }}</loc>
         <lastmod>2015-09-30T05:00:10+08:00</lastmod>
     </sitemap>{% endfor %}
 </sitemapindex>
