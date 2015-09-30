@@ -1,5 +1,6 @@
 /** **/
 $(function(){
+  // 滚动隐藏 header 部分
   $(document).scroll(function(e){
     var scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
     if(scrollTop > 200){
@@ -15,7 +16,27 @@ $(function(){
         'transform': 'translate3d(0, 0, 0)'
       });
     }
-  })
+  });
+  // 快捷键翻页控制
+  var navi = $('link[rel=pref],link[rel=pref]');
+  if(navi && navi.length > 0){
+    $(document).keydown(function(e){
+      var url;
+      switch(e.keyCode){
+        case 33:
+        case 37:
+        case 38:
+          url = $('link[rel=pref]').attr('href');
+          break;
+        case 34:
+        case 39:
+        case 40:
+          url = $('link[rel=pref]').attr('href');
+          break;
+      }
+      location.href = url;
+    });
+  }
 });
 // duoshuo
 (function(w, embed) {
