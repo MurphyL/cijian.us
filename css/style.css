@@ -1923,6 +1923,11 @@ footer .footer-list a:hover {
     color: #aaa;
 }
 
+.linkcat .blogroll {
+    width: 90%;
+    margin: 0 auto;
+}
+
 .blogroll li {
     float: left;
 }
