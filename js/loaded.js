@@ -34,7 +34,7 @@ $(function(){
           link = 'link[rel=next]';
           break;
       }
-      if(link){
+      if($(link).length){
         location.href = $(link).attr('href');
       }
     });
