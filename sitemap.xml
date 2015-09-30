@@ -6,11 +6,9 @@ layout: null
     <sitemap>
         <loc>http://www.ipc.me/sitemaps/category-1.xml</loc>
         <lastmod>2015-09-30T05:00:10+08:00</lastmod>
-    </sitemap>
-    {% for page in (1..paginator.total_pages) %}
+    </sitemap>{% for page in (1..paginator.total_pages) %}
     <sitemap>
         <loc>{{ page }}</loc>
         <lastmod>2015-09-30T05:00:10+08:00</lastmod>
-    </sitemap>
-    {% endfor %}
+    </sitemap>{% endfor %}
 </sitemapindex>
