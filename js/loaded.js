@@ -21,20 +21,22 @@ $(function(){
   var navi = $('link[rel=prev],link[rel=next]');
   if(navi && navi.length > 0){
     $(document).keydown(function(e){
-      var url;
+      var link;
       switch(e.keyCode){
         case 33:
         case 37:
         case 38:
-          url = $('link[rel=pref]').attr('href');
+          link = 'link[rel=prev]';
           break;
         case 34:
         case 39:
         case 40:
-          url = $('link[rel=pref]').attr('href');
+          link = 'link[rel=next]';
           break;
       }
-      location.href = url;
+      if(link){
+        location.href = $(link).attr('href');
+      }
     });
   }
 });
