@@ -39,8 +39,13 @@ $(function(){
     });
   }
 });
-// duoshuo
 (function(w, embed) {
+  // 百度统计
+  var hm = document.createElement("script");
+  hm.src = "//hm.baidu.com/hm.js?221d6affc0962df687673b64bad602fd";
+  var s = document.getElementsByTagName("script")[0];
+  s.parentNode.insertBefore(hm, s);
+  // duoshuo
 	if(!document.querySelector('.ds-thread')){
 		return;
 	}
