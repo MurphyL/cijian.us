@@ -8,9 +8,6 @@ paginate: 10
 url: "http://cijian.us"
 permalink: "/:title"
 paginate_path: "/page/:num"
-author: MurphyL
-twitter_username: MurphyLuo
-github_username:  MurphyL
 
 author:
     name: MurphyL
@@ -18,9 +15,6 @@ author:
     weibo: MurphyLuo
     github: MurphyL
     twitter: MurphyLuo
-
-
-
 
 favico: /assets/img/icon.png
 color: "#E0EBE8"
