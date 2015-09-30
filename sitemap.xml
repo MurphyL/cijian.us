@@ -2,13 +2,11 @@
 layout: null
 ---
 <?xml version="1.0" encoding="UTF-8"?>
-<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-    <sitemap><!-- {{ paginator.total_pages }} -->
-        <loc>http://www.ipc.me/sitemaps/category-1.xml</loc>
-        <lastmod>2015-09-30T05:00:10+08:00</lastmod>
-    </sitemap>{% for post in site.posts %}
-    <sitemap>
-        <loc>{{ post }}</loc>
-        <lastmod>2015-09-30T05:00:10+08:00</lastmod>
-    </sitemap>{% endfor %}
-</sitemapindex>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">{% for post in site.posts limit:10 %}
+  <url>
+    <loc>{{ post.url }}</loc>
+    <lastmod>{{ post.date }}</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url>{% endfor %}
+</urlset>
