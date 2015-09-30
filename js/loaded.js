@@ -25,12 +25,10 @@ $(function(){
       switch(e.keyCode){
         case 33:
         case 37:
-        case 38:
           link = 'link[rel=prev]';
           break;
         case 34:
         case 39:
-        case 40:
           link = 'link[rel=next]';
           break;
       }
