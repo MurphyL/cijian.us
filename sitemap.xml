@@ -7,6 +7,6 @@ layout: null
     <loc>{{ post.url | prepend: site.baseurl | prepend: site.url  }}</loc>
     <lastmod>{{ post.date | date_to_long_string }}</lastmod>
     <changefreq>daily</changefreq>
-    <priority>0.8</priority>
+    <priority>{{ pi }}</priority>
   </url>{% endfor %}
 </urlset>
