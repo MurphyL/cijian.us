@@ -1904,6 +1904,7 @@ footer .footer-list a:hover {
 /** 文章页 **/
 
 .linkcat {
+    clear: both;
     margin-bottom: 2em;
 }
 
