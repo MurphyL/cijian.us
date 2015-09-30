@@ -3,24 +3,24 @@
     <div class="row">
       <div class="col-md-12">
         <ul class="footer-list">
-          <li title="MurphyLuo的微博">
-            <a href="http://weibo.com/murphyluo" target="_blank"><i class="fa fa-weibo"></i></a>
+          <li>
+            <a href="http://weibo.com/{{ site.author.weibo }}" title="{{ site.author.weibo }}的微博" target="_blank"><i class="fa fa-weibo"></i></a>
           </li>
           <li title="Twitter">
-            <a href="https://twitter.com/murphyluo" target="_blank"><i class="fa fa-twitter"></i></a>
+            <a href="https://twitter.com/{{ site.author.twitter }}" title="{{ site.author.twitter }}的推特" target="_blank"><i class="fa fa-twitter"></i></a>
           </li>
           <li title="Github">
-            <a href="https://github.com/MurphyL" target="_blank"><i class="fa fa-github"></i></a>
+            <a href="https://github.com/{{ site.author.github }}" title="{{ site.author.github }}" target="_blank"><i class="fa fa-github"></i></a>
           </li>
           <li title="Email">
-            <a href="mailto://im@murphyl.com" target="_blank"><i class="fa fa-comments"></i></a>
+            <a href="mailto://{{ site.author.email }}"  title="给{{ site.author.email }}发送邮件" target="_blank"><i class="fa fa-comments"></i></a>
           </li>
         </ul>
       </div>
     </div>
     <div class="row">
       <div class="col-md-12">
-        <p>© 2015 <a href="{{ site.url }}">{{ site.github_username }}</a>. All rights reserved.<br />
+        <p>© 2015 <a href="{{ site.url }}">{{ site.author.name }}</a>. All rights reserved.<br />
         Powered by <a href="http://jekyllrb.com/">Jekyll</a>.</p>
       </div>
     </div>
