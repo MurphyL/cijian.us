@@ -1,6 +1,5 @@
 # Site settings
 title: 此间·我们
-email: im@cijian.us
 description: 缅怀那些我们在一起的日子~
 keywords: "诗歌, 回忆, JavaScript, Node, CSS, HTML, HTML5, PDF, PPT, design, ued"
 url: "http://cijian.us"
@@ -15,7 +14,7 @@ color: "#E0EBE8"
 
 author:
     name: MurphyL
-    email: im@murphyl.com
+    email: im@cijian.us
     weibo: MurphyLuo
     github: MurphyL
     twitter: MurphyLuo
