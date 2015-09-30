@@ -2,6 +2,7 @@
 layout: default
 title: 友链
 permalink: /links/
+excerpt: 『此间∙我们』的友情连接页面
 ---
 <section id="main">
   <div class="container">
@@ -9,7 +10,7 @@ permalink: /links/
       <div class="col-md-12">
         <div class="note">
           <h2 class="lead">
-            <a href="{{ '/links' | prepend: site.baseurl }}" class="ldb" title="{{ page.title }}" rel="bookmark">{{ page.title }}</a>
+            <a href="{{ page.url }}" class="ldb" title="{{ page.title }}" rel="bookmark">{{ page.title }}</a>
           </h2>
           <div id="article" class="prose">
             <p>个人会根据喜好主动增加友链。本质上说，私以为友链代表的是友情，是认可，而非凭空的一句话——“换个链接”。</p>
@@ -24,9 +25,9 @@ permalink: /links/
           </div>
         </div>
         <div class="note"><!-- 多说评论框 -->
-          <div class="ds-thread" 
-          data-thread-key="links" 
-          data-title="{{ page.title }}" 
+          <div class="ds-thread"
+          data-thread-key="links"
+          data-title="{{ page.title }}"
           data-url="{{ page.url | prepend: site.baseurl | prepend: site.url }}"></div>
         </div>
       </div>
