@@ -10,9 +10,3 @@ layout: null
     <priority>0.8</priority>
   </url>{% endfor %}
 </urlset>
-<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">{% for post in site.posts %}
-   <sitemap>
-      <loc>{{ post.date | date_to_long_string }}</loc>
-      <lastmod>{{ post.date | date_to_long_string }}</lastmod>
-   </sitemap>{% endfor %}
-</sitemapindex>
