@@ -3,12 +3,15 @@ title: 此间·我们
 email: im@cijian.us
 description: 缅怀那些我们在一起的日子~
 keywords: "诗歌, 回忆, JavaScript, Node, CSS, HTML, HTML5, PDF, PPT, design, ued"
-baseurl: "" # the subpath of your site, e.g. /blog/
-paginate: 10
 url: "http://cijian.us"
+baseurl: ""
+paginate: 10
+
 permalink: "/:title"
-source: "https://github.com/MurphyL/Pale"
 paginate_path: "/page/:num"
+
+favico: /assets/img/icon.png
+color: "#E0EBE8"
 
 author:
     name: MurphyL
@@ -16,9 +19,6 @@ author:
     weibo: MurphyLuo
     github: MurphyL
     twitter: MurphyLuo
-
-favico: /assets/img/icon.png
-color: "#E0EBE8"
 
 markdown: kramdown
 
