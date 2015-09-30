@@ -1,4 +1,3 @@
+Sitemap: http://cijian.us/sitemap.xml
 User-agent: *
 Allow: /
-
-Sitemap: http://cijian.us/sitemap.xml
