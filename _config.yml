@@ -9,9 +9,6 @@ paginate: 10
 permalink: "/:title"
 paginate_path: "/page/:num"
 
-favico: /assets/img/icon.png
-color: "#E0EBE8"
-
 author:
     name: MurphyL
     email: im@cijian.us
