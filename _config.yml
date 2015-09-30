@@ -2,6 +2,7 @@
 title: 此间·我们
 email: im@cijian.us
 description: 缅怀那些我们在一起的日子~
+keywords: "诗歌, 回忆, JavaScript, Node, CSS, HTML, HTML5, PDF, PPT, design, ued"
 baseurl: "" # the subpath of your site, e.g. /blog/
 paginate: 10
 url: "http://cijian.us"
@@ -11,12 +12,13 @@ author: MurphyL
 twitter_username: MurphyLuo
 github_username:  MurphyL
 
+
 favico: /assets/img/icon.png
 color: "#E0EBE8"
 
 markdown: kramdown
 
-kramdown:	
+kramdown:
     input:          GFM
     auto_ids:       true
     footnote_nr:    1
@@ -25,12 +27,12 @@ kramdown:
     smart_quotes:   "lsquo,rsquo,ldquo,rdquo"
     enable_coderay: false
 
-coderay:		
-    coderay_wrap:              div		
-    coderay_line_numbers:      inline		
-    coderay_line_number_start: 1		
-    coderay_tab_width:         4		
-    coderay_bold_every:        10		
+coderay:
+    coderay_wrap:              div
+    coderay_line_numbers:      inline
+    coderay_line_number_start: 1
+    coderay_tab_width:         4
+    coderay_bold_every:        10
     coderay_css:               style
 
 

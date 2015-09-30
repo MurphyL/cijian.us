@@ -3,7 +3,7 @@
 <head prefix="og:http://ogp.me/ns#">
   <meta charset="utf-8">
   <title>{% if page.title %}{{ page.title }} | {% endif %}{{ site.title }}</title>
-  <meta name="keywords" content="{% if page.tags %}{{ page.tags | array_to_sentence_string | | replace: 'and ', '' }}{% endif %}">
+  <meta name="keywords" content="{% if page.tags %}{{ page.tags | array_to_sentence_string | | replace: 'and ', '' }}{% else %}{{ site.blog.keywords }}{% endif %}">
   <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 100 }}{% else %}{{ site.description }}{% endif %}">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
