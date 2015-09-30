@@ -501,10 +501,6 @@ pre code {
     display: table
 }
 
-.container:after {
-    clear: both
-}
-
 .row {
     margin-left: -15px;
     margin-right: -15px
