@@ -1,5 +1,5 @@
 ---
-layout: poem
+layout: song
 title: "十一月的村庄"
 date: 2014-01-31 14:12:07
 categories: 日记 心情 回忆
