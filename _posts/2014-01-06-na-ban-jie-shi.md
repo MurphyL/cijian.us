@@ -1,5 +1,5 @@
 ---
-layout: post 
+layout: song 
 title: "半截诗歌"
 date: 2014-01-06 16:28:32
 categories: 心情 回忆
