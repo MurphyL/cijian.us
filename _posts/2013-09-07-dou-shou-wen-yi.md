@@ -1,5 +1,5 @@
 ---
-layout: post 
+layout: song 
 title: "兜售文艺"
 date: 2013-09-07 20:33:49
 categories: 评论 日记 心情 大学 回忆 博客 分享
@@ -10,4 +10,5 @@ categories: 评论 日记 心情 大学 回忆 博客 分享
 爱武藤兰不比爱 Tilda Swinton 更卑贱， 
 喜欢凤凰传奇和喜欢 Coldplay 一样只是一种喜好。 
 贩卖趣味，炫耀知识的本身才是可疑的。
+
 本文来自 - 后时代。三五成行
