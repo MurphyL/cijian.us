@@ -1,5 +1,5 @@
 ---
-layout: poem
+layout: song
 title: "咏司马相如"
 tags: 诗歌 司马相如 词
 ---
