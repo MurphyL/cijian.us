@@ -41,7 +41,7 @@
   <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ '/feed.xml' | prepend: site.baseurl | prepend: site.url }}">{% if page.previous && page.previous.id %}
   <link rel="prev" href="{{ page.previous.url }}" title="{{ page.previous.title }}">{% endif %}{% if page.next && page.next.id %}
   <link rel="next" href="{{ page.next.url }}" title="{{ page.next.title }}">{% endif %}
-  <link rel="current" href="{{ page.url | prepend: site.baseurl | prepend: site.url }}" title="{{ page.title }}" seq="{{ page.url | replace: '/', '' }}" id="current-page">
+  <link rel="current" href="{{ page.url | prepend: site.baseurl | prepend: site.url }}" title="{{ page.title }}" id="{{ page.url | replace: '/', '' }}">
   <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
   <!--[if lt IE 9]>
   <script src="/js/respond.min.js"></script>
