@@ -1,6 +1,6 @@
 ---
 layout: song
-title: "汤逊湖边垂满杨柳的地方"
+title: "垂满杨柳的地方"
 tags:
 ---
 
