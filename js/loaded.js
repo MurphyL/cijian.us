@@ -32,7 +32,7 @@ $(function(){
           link = 'link[rel=next]';
           break;
       }
-      link = $(link);
+      link = navi.find(link);
       if(link.length){
         location.href = link.attr('href');
       }
@@ -56,16 +56,3 @@ $(function(){
 	ds.charset = 'UTF-8';
 	(document.getElementsByTagName('head')[0]  || document.getElementsByTagName('body')[0]).appendChild(ds);
 })(window, '//static.duoshuo.com/embed.js');
-/***
-(function(){
-	var page = $('meta[rel=current]');
-	var disqus_config = function () {
-		this.page.url = page.attr('href');
-		this.page.identifier = page.attr('id');
-	};
-	var d = document, s = d.createElement('script');
-	s.src = '//cbml.disqus.com/embed.js';
-	s.setAttribute('data-timestamp', +new Date());
-	(d.head || d.body).appendChild(s);
-})();
-***/
