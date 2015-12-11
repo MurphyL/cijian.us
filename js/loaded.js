@@ -18,26 +18,23 @@ $(function(){
     }
   });
   // 快捷键翻页控制
-  var navi = $('link[rel=prev],link[rel=next]');
-  if(navi && navi.length > 0){
-    $(document).keydown(function(e){
-      var link;
-      switch(e.keyCode){
-        case 33:
-        case 37:
-          link = 'link[rel=prev]';
-          break;
-        case 34:
-        case 39:
-          link = 'link[rel=next]';
-          break;
-      }
-      link = navi.find(link);
-      if(link.length){
-        location.href = link.attr('href');
-      }
-    });
-  }
+	$(document).keydown(function(e){
+	  var link;
+	  switch(e.keyCode){
+	    case 33:
+	    case 37:
+	      link = 'link[rel=prev]';
+	      break;
+	    case 34:
+	    case 39:
+	      link = 'link[rel=next]';
+	      break;
+	  }
+	  link = $(link);
+	  if(link.length){
+	    location.href = link.attr('href');
+	  }
+	});
 });
 (function(w, embed) {
   // 百度统计
