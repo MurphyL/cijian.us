@@ -12,5 +12,5 @@ categories: 有趣 广告 分享 公益
 架不住，这乳腺癌算个屁啊～
 
 头发的质感不怎么好！小妹妹有点卖萌喝～～
-[audio:http://w.gokuai.com/w/zr6M363EU7Mh93y5/沙滩.mp3|titles=沙滩|artists=陶喆|autostart=yes|loop=yes]
+
 来源：后生代
