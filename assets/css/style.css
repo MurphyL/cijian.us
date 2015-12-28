@@ -1,7 +1,7 @@
 @font-face {
     font-family: 'LiDeBiao';
-    src: url('/fonts/LiDeBiao-Xing3.eot');
-    src: url('/fonts/LiDeBiao-Xing3.eot?#iefix') format('embedded-opentype'), url('/fonts/LiDeBiao-Xing3.woff') format('woff'), url('/fonts/LiDeBiao-Xing3.ttf') format('truetype'), url('/fonts/LiDeBiao-Xing3.svg#LiDeBiao-Xing3') format('svg');
+    src: url('/assets/fonts/LiDeBiao-Xing3.eot');
+    src: url('/assets/fonts/LiDeBiao-Xing3.eot?#iefix') format('embedded-opentype'), url('/assets/fonts/LiDeBiao-Xing3.woff') format('woff'), url('/assets/fonts/LiDeBiao-Xing3.ttf') format('truetype'), url('/assets/fonts/LiDeBiao-Xing3.svg#LiDeBiao-Xing3') format('svg');
     font-weight: normal;
     font-style: normal;
 }
