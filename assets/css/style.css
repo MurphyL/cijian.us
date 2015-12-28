@@ -1,7 +1,7 @@
 @font-face {
     font-family: 'LiDeBiao';
-    src: url('/assets/fonts/LiDeBiao-Xing3.eot');
-    src: url('/assets/fonts/LiDeBiao-Xing3.eot?#iefix') format('embedded-opentype'), url('/assets/fonts/LiDeBiao-Xing3.woff') format('woff'), url('/assets/fonts/LiDeBiao-Xing3.ttf') format('truetype'), url('/assets/fonts/LiDeBiao-Xing3.svg#LiDeBiao-Xing3') format('svg');
+    src: url('../fonts/LiDeBiao-Xing3.eot');
+    src: url('../fonts/LiDeBiao-Xing3.eot?#iefix') format('embedded-opentype'), url('../fonts/LiDeBiao-Xing3.woff') format('woff'), url('../fonts/LiDeBiao-Xing3.ttf') format('truetype'), url('../fonts/LiDeBiao-Xing3.svg#LiDeBiao-Xing3') format('svg');
     font-weight: normal;
     font-style: normal;
 }
@@ -33,7 +33,7 @@
 
 /*! normalize.css v2.1.0 | MIT License | git.io/normalize */
 
-article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, section, summary {
+article, aside, details, figcaption, figure, footer, header, main, nav, section, summary {
     display: block
 }
 
@@ -843,10 +843,6 @@ input[type=submit].btn-block, input[type=reset].btn-block, input[type=button].bt
     float: left !important
 }
 
-@-ms-viewport {
-    width: device-width
-}
-
 @media screen and (max-width: 400px) {
     @-ms-viewport {
         width: 320px
@@ -1451,7 +1447,6 @@ header.nav-fixed {
         -webkit-transition: all .8s;
         transition: all .8s;
         -webkit-backface-visibility: hidden;
-        -webkit-perspective: 1000;
         overflow: hidden;
         -webkit-transition-timing-function: ease-in-out;
         background: #fff
@@ -1550,7 +1545,7 @@ h2.notes img {
 
 #title .cloud {
     position: absolute;
-    background: url(/img/cloud.svg) top left no-repeat;
+    background: url(../img/cloud.svg) top left no-repeat;
     width: 150px;
     height: 45px;
     -webkit-transition: all 1s ease-in-out;
