@@ -35,10 +35,10 @@
   <link rel="dns-prefetch" href="http://static.duoshuo.com">
   <link rel="dns-prefetch" href="http://cijian.duoshuo.com">
   <link rel="dns-prefetch" href="http://gravatar.duoshuo.com">
-  <link rel="sitemap" href="{{ '/sitemap.xml' | prepend: site.baseurl | prepend: site.url }}" />
+  <link rel="sitemap" href="{{ '/pages/sitemap.xml' | prepend: site.baseurl | prepend: site.url }}" />
   <link rel="stylesheet" href="{{ '/assets/css/style.css' | prepend: site.baseurl }}">
   <link rel="stylesheet" href="http://cijian.qiniudn.com/css/font-awesome.min.css">
-  <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ '/feed.xml' | prepend: site.baseurl | prepend: site.url }}">{% if page.previous && page.previous.id %}
+  <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ '/pages/feed.xml' | prepend: site.baseurl | prepend: site.url }}">{% if page.previous && page.previous.id %}
   <link rel="prev" href="{{ page.previous.url | prepend: site.baseurl | prepend: site.url }}" title="{{ page.previous.title }}">{% endif %}{% if page.next && page.next.id %}
   <link rel="next" href="{{ page.next.url  | prepend: site.baseurl | prepend: site.url }}" title="{{ page.next.title }}">{% endif %}
   <link rel="current" href="{{ page.url | prepend: site.baseurl | prepend: site.url }}" title="{{ page.title }}" id="{{ page.url | replace: '/', '' }}">
@@ -65,8 +65,8 @@
                 <div class="col-md-8 col-xs-8">
                     <nav id="top-nav">
                         <ul class="nav-list">
-                          <li class="pn"><a href="{{ site.baseurl }}/links" class="ldb">友链</a></li>
-                          <li><a href="{{ site.baseurl }}/about" class="ldb" lazyload="1">关于</a></li>
+                          <li class="pn"><a href="{{ site.baseurl }}/pages/links" class="ldb">友链</a></li>
+                          <li><a href="{{ site.baseurl }}/pages/about" class="ldb" lazyload="1">关于</a></li>
                         </ul>
                     </nav>
                 </div>
