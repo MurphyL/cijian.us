@@ -103,6 +103,10 @@
 		"items" : [{
 				"name" : "Rico's Blog",
 				"link" : "http://hogwartsrico.github.io/"
+			},{
+				"name" : "Dez anos",
+				"link" : "http://blog.jysoftware.com/",
+				"desc" : "Su origen puede datar de 10 anos antes."
 			}
 		]
 	}
