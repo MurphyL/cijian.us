@@ -9,14 +9,30 @@
 		]
 	},
 	{
+		"name" : "订阅の博客",
+		"items" : [{
+				"name" : "JSNext.fm",
+				"link" : "http://jsnext.fm/",
+				"desc" : "前端技术中文播客节目"
+			}
+		]
+	},
+	{
 		"name" : "道友の社群",
 		"items" : [{
 				"name" : "V2EX",
 				"link" : "http://v2ex.com/"
 			},{
-				"name" : "UI中国",
-				"link" : "http://www.ui.cn/",
-				"desc": "专业界面交互设计平台"
+				"name" : "V2EX",
+				"link" : "http://v2ex.com/"
+			},{
+				"name" : "SegmentFault",
+				"link" : "http://segmentfault.com/",
+				"desc": "专注于程序员开发者的社区平台，提供开发相关的高质量问答，专栏，笔记，招聘，线下活动等服务。"
+			},{
+				"name" : "开源中国",
+				"link" : "http://www.oschina.net/",
+				"desc": "找到您想要的开源项目，分享和交流"
 			},{
 				"name" : "前端网（W3Cfuns）",
 				"link" : "http://www.w3cfuns.com/",
