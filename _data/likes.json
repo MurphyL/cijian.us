@@ -9,17 +9,11 @@
 		]
 	},
 	{
-		"name" : "订阅の博客",
-		"items" : [{
-				"name" : "JSNext.fm",
-				"link" : "http://jsnext.fm/",
-				"desc" : "前端技术中文播客节目"
-			}
-		]
-	},
-	{
 		"name" : "道友の社群",
 		"items" : [{
+				"name" : "GitHub",
+				"link" : "https://github.com/"
+			},{
 				"name" : "V2EX",
 				"link" : "http://v2ex.com/"
 			},{
