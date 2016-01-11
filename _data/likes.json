@@ -17,6 +17,10 @@
 				"name" : "UI中国",
 				"link" : "http://www.ui.cn/",
 				"desc": "专业界面交互设计平台"
+			},{
+				"name" : "前端网（W3Cfuns）",
+				"link" : "http://www.w3cfuns.com/",
+				"desc": "前端开发工程师的家"
 			}
 		]
 	}
