@@ -94,5 +94,13 @@
 				"link" : "http://alinode.aliyun.com/blog"
 			}
 		]
+	},
+	{
+		"name" : "道友の主页",
+		"items" : [{
+				"name" : "Rico's Blog",
+				"link" : "http://hogwartsrico.github.io/"
+			}
+		]
 	}
 ]
