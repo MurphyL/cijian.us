@@ -1,0 +1,29 @@
+---
+layout: default
+title: 收藏
+permalink: /likes/
+excerpt: MurphyL的收藏夹
+---
+<section id="main">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="note">
+          <h2 class="lead">
+            <a href="{{ page.url }}" class="ldb" title="{{ page.title }}" rel="bookmark">{{ page.title }}</a>
+          </h2>
+          <div id="article" class="prose">
+            <ul class="links">{% for link in site.data.likes %}
+              <li class="linkcat clearfix">
+                <h3>{{ link.name }}</h3>
+                <ul class="blogroll">{% for item in link.items %}
+                    <li><a href="{{item.link}}" title="{{ item.desc }}" target="_blank" rel="nofollow">{{ item.name }}</a></li>
+                {% endfor %}</ul>
+              </li>
+            {% endfor %}</ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
