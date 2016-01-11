@@ -58,13 +58,13 @@
 				"link" : "http://www.ibm.com/developerworks/index.html",
 				"desc": "IBM's resource for developers and IT professionals"
 			},{
-				"name" : "优设（UISDC）",
-				"link" : "http://www.uisdc.com/",
-				"desc" : "优秀网页设计联盟"
-			},{
 				"name" : "开源中国",
 				"link" : "http://www.oschina.net/",
 				"desc": "找到您想要的开源项目，分享和交流"
+			},{
+				"name" : "优设（UISDC）",
+				"link" : "http://www.uisdc.com/",
+				"desc" : "优秀网页设计联盟"
 			},{
 				"name" : "前端网（W3Cfuns）",
 				"link" : "http://www.w3cfuns.com/",
