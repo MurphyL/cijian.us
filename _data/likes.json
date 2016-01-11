@@ -7,5 +7,17 @@
 				"desc" : "前端技术中文播客节目"
 			}
 		]
+	},
+	{
+		"name" : "道友の社群",
+		"items" : [{
+				"name" : "V2EX",
+				"link" : "http://v2ex.com/"
+			},{
+				"name" : "UI中国",
+				"link" : "http://www.ui.cn/",
+				"desc": "专业界面交互设计平台"
+			}
+		]
 	}
 ]
