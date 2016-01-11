@@ -1,0 +1,11 @@
+[
+	{
+		"name" : "订阅の博客",
+		"items" : [{
+				"name" : "JSNext.fm",
+				"link" : "http://jsnext.fm/",
+				"desc" : "前端技术中文播客节目"
+			}
+		]
+	}
+]
