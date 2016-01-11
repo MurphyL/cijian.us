@@ -23,8 +23,9 @@
 				"name" : "V2EX",
 				"link" : "http://v2ex.com/"
 			},{
-				"name" : "V2EX",
-				"link" : "http://v2ex.com/"
+				"name" : "CNode",
+				"link" : "https://cnodejs.org/",
+				"desc" : "Node.js专业中文社区"
 			},{
 				"name" : "SegmentFault",
 				"link" : "http://segmentfault.com/",
