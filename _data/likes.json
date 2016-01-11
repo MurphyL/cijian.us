@@ -40,13 +40,21 @@
 				"name" : "W3CTech",
 				"link" : "http://www.w3ctech.com/"
 			},{
-				"name" : "优设-UISDC",
+				"name" : "优设（UISDC）",
 				"link" : "http://www.uisdc.com/",
 				"desc" : "优秀网页设计联盟"
 			},{
 				"name" : "CSS Author",
 				"link" : "http://www.cssauthor.com/",
 				"desc" : "Web Design Resources, Freebies, Articles &amp; More..."
+			}
+		]
+	},
+	{
+		"name" : "大触&名博",
+		"items" : [{
+				"name" : "腾讯CDC",
+				"link" : "http://cdc.tencent.com/"
 			}
 		]
 	}
