@@ -22,6 +22,9 @@
 				"name" : "GitHub",
 				"link" : "https://github.com/"
 			},{
+				"name" : "MDN",
+				"link" : "https://developer.mozilla.org"
+			},{
 				"name" : "V2EX",
 				"link" : "http://v2ex.com/"
 			},{
