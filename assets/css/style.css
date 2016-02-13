@@ -722,14 +722,14 @@ header.nav-root {
     }
 }
 
-#earth-holder {
+#earth {
     margin: 0 auto;
     max-width: 800px;
     max-height: 150px;
     overflow: hidden
 }
 
-#earth-holder img {
+#earth svg {
     width: 100%
 }
 
