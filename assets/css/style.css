@@ -1882,6 +1882,8 @@ footer .footer-list a:hover {
 pre.song {
     display: flex;
     justify-content: center;
+    background: none;
+    border: none;
 }
 
 pre#article .main {
