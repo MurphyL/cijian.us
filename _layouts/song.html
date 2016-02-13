@@ -6,9 +6,9 @@
         <h2 class="text-center">
           <a href="{{ page.url }}" title="{{ page.title }}" rel="bookmark">{{ page.title }}</a>
         </h2>
-        <div class="note">
-          <pre id="article" class="song">{{ content }}</pre>
-        </div>
+        <pre class="note">
+          <div id="article" class="main">{{ content }}</div>
+        </pre>
         <div class="note"><!-- 多说评论框 -->
           <div class="ds-thread"
           data-thread-key="{{ page.id | replace: '/', '' }}"
