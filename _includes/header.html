@@ -45,25 +45,22 @@
   <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
   <!--[if lt IE 9]>
   <script src="/assets/js/respond.min.js"></script>
-  <script src="/assets/js/modernizr.js"></script>
   <![endif]-->
 </head>
 <body class="home blog">
 <section id="top">
-    <header id="home-top" class="nav-top nav-fixed nav-root">
+    <header class="nav-top nav-fixed nav-root">
         <div class="container">
-            <div class="row">
-                <div class="col-md-4 col-xs-4">
-                    <h1 id="header-logo" class="image-text">
+            <div class="" style="display:flex">
+                <div class="" style="flex:1">
+                    <h1 id="logo">
                         <a href="{{ site.baseurl }}/" title="{{ site.title }}">
-                            <span class="mask"></span>
-                            <span class="behind">此间·我们</span>
-                            <img src="http://cijian.qiniudn.com/idra.png" alt="此间·我们" lazyload="1" />
+                            <img src="http://cijian.qiniudn.com/idra.png" alt="{{ site.title }}" lazyload="1" />
                         </a>
                     </h1>
                 </div>
-                <div class="col-md-8 col-xs-8">
-                    <nav id="top-nav">
+                <div class="" style="flex:2">
+                    <nav>
                         <ul class="nav-list">
                           <li class="pn"><a href="{{ site.baseurl }}/links" class="ldb">友链</a></li>
                           <li><a href="{{ site.baseurl }}/about" class="ldb" lazyload="1">关于</a></li>
@@ -73,33 +70,21 @@
             </div><!-- / row -->
         </div><!--/ container -->
     </header>
-    <div class="masthead-wrap">
         <div id="title">
             <div class="container">
                 <div class="cloud left-cloud"></div>
                 <div class="cloud right-cloud"></div>
-                <div class="row">
-                    <div class="col-md-12">
-                        <div id="head-slider">
-                            <div class="slide-contents">
-                                <div class="slide text-center color-text">
-                                    <h1 class="im-sean">
-                                        <figure class="ldb">此间·我们</figure>
-                                    </h1>
-                                    <p class="header-desc ldb">养心如葵，素心如兰</p>
-                                </div>
-                            </div>
+  	        <div id="head-slider">
+            	    <div class="slide-contents">
+                	<div class="text-center color-text ldb">
+                            <h1>{{ site.title }}</h1>
+                            <p>养心如葵，素心如兰</p>
                         </div>
-                    </div><!-- /col 24 -->
-                </div><!-- /row -->
+    	            </div>
+            	</div>
             </div>
         </div>
-    </div>
-    <div class="masthead-wrap">
         <div id="masthead">
-            <div id="earth-holder">
-                <img src="{{ site.baseurl }}/assets/img/land.svg">
-            </div>
+            <div id="earth-holder">{% include land.svg %}</div>
         </div>
-    </div>
 </section><!-- header end -->

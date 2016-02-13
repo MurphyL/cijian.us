@@ -16,6 +16,11 @@ author:
     github: MurphyL
     twitter: MurphyLuo
 
+gems: [jekyll-paginate]
+
+sass:
+    style: compressed
+
 markdown: kramdown
 
 kramdown:
