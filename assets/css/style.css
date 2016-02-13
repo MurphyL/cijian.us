@@ -1889,6 +1889,11 @@ footer .footer-list a:hover {
     font-weight: 200;
 }
 
+pre#article {
+    background: none;
+    border: none;
+}
+
 #article blockquote p {
     padding-bottom: 0;
     text-align: left;
