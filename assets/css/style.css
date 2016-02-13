@@ -1879,19 +1879,20 @@ footer .footer-list a:hover {
     text-indent: 2em;
 }
 
-.song p {
-    margin-left: 25%;
+pre.song {
+    display: flex;
+    justify-content: center;
+}
+
+pre#article .main {
+    background: none;
+    border: none;
 }
 
 .prose h6, .song h6, .poem h6 {
     text-align: right;
     font-size: 1.6em;
     font-weight: 200;
-}
-
-pre#article {
-    background: none;
-    border: none;
 }
 
 #article blockquote p {
