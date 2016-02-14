@@ -4,34 +4,21 @@ title: 友链
 permalink: /links/
 excerpt: 『此间∙我们』的友情连接页面
 ---
-<section id="main">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-12">
-        <div class="note">
-          <h2 class="lead">
-            <a href="{{ page.url }}" class="ldb" title="{{ page.title }}" rel="bookmark">{{ page.title }}</a>
-          </h2>
-          <div id="article" class="prose">
-            <p>个人会根据喜好主动增加友链。本质上说，私以为友链代表的是友情，是认可，而非凭空的一句话——“换个链接”。</p>
-            <ul class="links">{% for link in site.data.links %}
-              <li class="linkcat clearfix">
-                <h3>{{ link.name }}</h3>
-                <ul class="blogroll">{% for item in link.items %}
-                    <li><a href="{{item.link}}" title="{{ item.desc }}" target="_blank" rel="nofollow">{{ item.name }}</a></li>
-                {% endfor %}</ul>
-              </li>
-            {% endfor %}</ul>
-          </div>
-        </div>
-        <div class="note"><!-- 多说评论框 -->
-          <div class="ds-thread"
-          data-thread-key="links"
-          data-title="{{ page.title }}"
-          data-url="{{ page.url | prepend: site.baseurl | prepend: site.url }}"></div>
-        </div>
-        <!--<div id="disqus_thread"></div>-->
-      </div>
-    </div>
-  </div>
-</section>
+<main>
+  <article class="container post">
+    <h2>
+      <a href="{{ page.url }}" class="ldb" title="{{ page.title }}" rel="bookmark">{{ page.title }}</a>
+    </h2>
+    <section>
+      <p>个人会根据喜好主动增加友链。本质上说，私以为友链代表的是友情，是认可，而非凭空的一句话——“换个链接”。</p>
+      <dl class="links">{% for link in site.data.links %}
+        <dt>{{ link.name }}</dt>{% for item in link.items %}
+        <dd><a href="{{item.link}}" title="{{ item.desc }}" target="_blank" rel="nofollow">{{ item.name }}</a></dd>{% endfor %}{% endfor %}
+      </dl>
+    </section>
+  </article>
+  <div class="container ds-thread"
+       data-thread-key="links"
+       data-title="{{ page.title }}"
+       data-url="{{ page.url | prepend: site.baseurl | prepend: site.url }}"></div>
+</main>

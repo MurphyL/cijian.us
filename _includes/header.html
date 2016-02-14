@@ -3,8 +3,10 @@
 <head profile="og:http://ogp.me/ns#">
   <meta charset="utf-8">
   <title>{% if page.title %}{{ page.title }} | {% endif %}{{ site.title }}</title>
-  <meta name="keywords" content="{% if page.tags %}{{ page.tags | array_to_sentence_string | | replace: 'and ', '' }}{% else %}{{ site.keywords }}{% endif %}{% if page.categories %}MurphyL, {{ page.categories | array_to_sentence_string | | replace: 'and ', '' }}{% endif %}">
-  <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 100 }}{% else %}{{ site.description }}{% endif %}">
+  <meta name="keywords"
+        content="{% if page.tags %}{{ page.tags | array_to_sentence_string | | replace: 'and ', '' }}{% else %}{{ site.keywords }}{% endif %}{% if page.categories %}MurphyL, {{ page.categories | array_to_sentence_string | | replace: 'and ', '' }}{% endif %}">
+  <meta name="description"
+        content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 100 }}{% else %}{{ site.description }}{% endif %}">
   <meta name="author" content="{{ site.author.name }},{{ site.author.email }}">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
   <meta name="robots" content="index, follow">
@@ -20,7 +22,7 @@
   <meta name="msapplication-TileColor" content="#E0EBE8">
   <meta name="apple-mobile-web-app-status-bar-style" content="#E0EBE8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-  <meta http-equiv="cleartype" content="on" >
+  <meta http-equiv="cleartype" content="on">
   <meta http-equiv="Cache-Control" content="no-transform">
   <meta http-equiv="Cache-Control" content="no-siteapp">
   <meta property="og:site_name" content="{{ site.title }}">
@@ -30,61 +32,46 @@
   <meta property="og:description" content="{{ site.description }}">
   <link rel="shortcut icon" href="http://cijian.qiniudn.com/favicon.ico">
   <link rel="icon" type="image/png" href="http://cijian.qiniudn.com/idra.png">
-  <link rel="profile" href="http://gmpg.org/xfn/11" >
+  <link rel="profile" href="http://gmpg.org/xfn/11">
   <link rel="canonical" href="{{ site.url | prepend: site.baseurl }}">
   <link rel="dns-prefetch" href="http://static.duoshuo.com">
   <link rel="dns-prefetch" href="http://cijian.duoshuo.com">
   <link rel="dns-prefetch" href="http://gravatar.duoshuo.com">
-  <link rel="sitemap" href="{{ '/assets/sitemap.xml' | prepend: site.baseurl | prepend: site.url }}" />
+  <link rel="sitemap" href="{{ '/assets/sitemap.xml' | prepend: site.baseurl | prepend: site.url }}"/>
   <link rel="stylesheet" href="{{ '/assets/css/style.css' | prepend: site.baseurl }}">
   <link rel="stylesheet" href="http://cijian.qiniudn.com/css/font-awesome.min.css">
   <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ '/assets/feed.xml' | prepend: site.baseurl | prepend: site.url }}">{% if page.previous && page.previous.id %}
   <link rel="prev" href="{{ page.previous.url | prepend: site.baseurl | prepend: site.url }}" title="{{ page.previous.title }}">{% endif %}{% if page.next && page.next.id %}
   <link rel="next" href="{{ page.next.url  | prepend: site.baseurl | prepend: site.url }}" title="{{ page.next.title }}">{% endif %}
-  <link rel="current" href="{{ page.url | prepend: site.baseurl | prepend: site.url }}" title="{{ page.title }}" id="{{ page.url | replace: '/', '' }}">
+  <link rel="current" href="{{ page.url | prepend: site.baseurl | prepend: site.url }}" title="{{ page.title }}">
   <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
   <!--[if lt IE 9]>
   <script src="/assets/js/respond.min.js"></script>
   <![endif]-->
 </head>
-<body class="home blog">
-<section id="top">
-    <header class="nav-top nav-fixed nav-root">
-        <div class="container">
-            <div class="" style="display:flex">
-                <div class="" style="flex:1">
-                    <h1 id="logo">
-                        <a href="{{ site.baseurl }}/" title="{{ site.title }}">
-                            <img src="http://cijian.qiniudn.com/idra.png" alt="{{ site.title }}" lazyload="1" />
-                        </a>
-                    </h1>
-                </div>
-                <div class="" style="flex:2">
-                    <nav>
-                        <ul class="nav-list">
-                          <li class="pn"><a href="{{ site.baseurl }}/links" class="ldb">友链</a></li>
-                          <li><a href="{{ site.baseurl }}/about" class="ldb" lazyload="1">关于</a></li>
-                        </ul>
-                    </nav>
-                </div>
-            </div><!-- / row -->
-        </div><!--/ container -->
-    </header>
-        <div id="title">
-            <div class="container">
-                <div class="cloud left-cloud"></div>
-                <div class="cloud right-cloud"></div>
-  	        <div id="head-slider">
-            	    <div class="slide-contents">
-                	<div class="text-center color-text ldb">
-                            <h1>{{ site.title }}</h1>
-                            <p>养心如葵，素心如兰</p>
-                        </div>
-    	            </div>
-            	</div>
-            </div>
-        </div>
-        <div id="masthead">
-            <div id="earth">{% include land.svg %}</div>
-        </div>
-</section><!-- header end -->
+<body>
+<header>
+  <div class="container">
+    <div class="top flex">
+      <div class="logo" class="flex-one">
+        <a href="{{ site.baseurl }}/" title="{{ site.title }}">
+          <img src="http://cijian.qiniudn.com/idra.png" alt="{{ site.title }}" lazyload="1"/>
+        </a>
+      </div>
+      <nav class="flex-two text-right ldb">
+        <a href="{{ site.baseurl }}/links">友链</a>
+        <a href="{{ site.baseurl }}/about">关于</a>
+      </nav>
+    </div>
+    <div class="title">
+      <div class="cloud left-cloud"></div>
+      <div class="cloud right-cloud"></div>
+      <div class="text-center color-text ldb">
+        <h1 class="">{{ site.title }}</h1>
+        <summary>养心如葵，素心如兰</summary>
+      </div>
+    </div>
+    <figure class="earth">{% include land.svg %}</figure>
+  </div>
+</header>
+

@@ -4,23 +4,11 @@ title: 收藏
 permalink: /likes/
 excerpt: MurphyL的收藏夹
 ---
-<section id="main">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-12">
-        <div class="note">
-          <div id="article" class="prose">
-            <ul class="links">{% for link in site.data.likes %}
-              <li class="linkcat clearfix">
-                <h3>{{ link.name }}</h3>
-                <ul class="blogroll">{% for item in link.items %}
-                  <li><a href="{{item.link}}" title="{{ item.desc }}" target="_blank" rel="nofollow">{{ item.name }}</a></li>
-                {% endfor %}</ul>
-              </li>
-            {% endfor %}</ul>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
+<main>
+  <section class="container post">
+    <dl class="links">{% for link in site.data.likes %}
+      <dt>{{ link.name }}</dt>{% for item in link.items %}
+      <dd><a href="{{item.link}}" title="{{ item.desc }}" target="_blank" rel="nofollow">{{ item.name }}</a></dd>{% endfor %}
+    {% endfor %}</dl>
+  </section>
+</main>
