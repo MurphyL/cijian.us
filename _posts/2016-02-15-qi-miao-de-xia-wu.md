@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "奇妙的下午"
-tags:
+tags: 游戏 爱情 校园 奇妙
 ---
 
 > 以前写的GALGame《忽而一秋》的台本，整理一下似乎还能看。
