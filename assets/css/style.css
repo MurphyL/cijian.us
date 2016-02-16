@@ -255,6 +255,7 @@ main blockquote {
 main blockquote p {
   margin: 0;
   padding: 1rem 0;
+  color: #878787;
 }
 
 .post p, main blockquote p {
