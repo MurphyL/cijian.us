@@ -244,6 +244,8 @@ main dt {
 }
 
 main blockquote {
+  margin-left: 0;
+  margin-right: 0;
   padding: 0 1em;
   border-left: 5px solid #e0ebe8;
   font-size: 1.1rem;
