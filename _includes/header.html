@@ -4,10 +4,8 @@
   <meta charset="utf-8">
   <meta property="qc:admins" content="1560367245116653" />
   <title>{% if page.title %}{{ page.title }} | {% endif %}{{ site.title }}</title>
-  <meta name="keywords"
-        content="{% if page.tags %}{{ page.tags | array_to_sentence_string | | replace: 'and ', '' }}{% else %}{{ site.keywords }}{% endif %}{% if page.categories %}MurphyL, {{ page.categories | array_to_sentence_string | | replace: 'and ', '' }}{% endif %}">
-  <meta name="description"
-        content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 100 }}{% else %}{{ site.description }}{% endif %}">
+  <meta name="keywords" content="{% if page.tags %}{{ page.tags | array_to_sentence_string | | replace: 'and ', '' }}{% else %}{{ site.keywords }}{% endif %}{% if page.categories %}MurphyL, {{ page.categories | array_to_sentence_string | | replace: 'and ', '' }}{% endif %}">
+  <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 100 }}{% else %}{{ site.description }}{% endif %}">
   <meta name="author" content="{{ site.author.name }},{{ site.author.email }}">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
   <meta name="robots" content="index, follow">
