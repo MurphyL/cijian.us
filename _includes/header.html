@@ -26,11 +26,11 @@
   <meta http-equiv="Cache-Control" content="no-siteapp">
   <meta property="og:site_name" content="{{ site.title }}">
   <meta property="og:url" content="{{ site.url | prepend: site.baseurl }}">
-  <meta property="og:image" content="http://cijian.qiniudn.com/idra.png">
+  <meta property="og:image" content="{{ site.url | prepend: site.baseurl }}/assets/img/icon.png">
   <meta property="og:locale" content="zh_CN">
   <meta property="og:description" content="{{ site.description }}">
-  <link rel="shortcut icon" href="http://cijian.qiniudn.com/favicon.ico">
-  <link rel="icon" type="image/png" href="http://cijian.qiniudn.com/idra.png">
+  <link rel="shortcut icon" href="/favicon.ico">
+  <link rel="icon" type="image/png" href="{{ site.url | prepend: site.baseurl }}/assets/img/icon.png">
   <link rel="profile" href="http://gmpg.org/xfn/11">
   <link rel="canonical" href="{{ site.url | prepend: site.baseurl }}">
   <link rel="dns-prefetch" href="http://static.duoshuo.com">
@@ -54,7 +54,7 @@
     <div class="top flex">
       <div class="logo" class="flex-one">
         <a href="{{ site.baseurl }}/" title="{{ site.title }}">
-          <img src="http://cijian.qiniudn.com/idra.png" alt="{{ site.title }}" lazyload="1"/>
+          <img src="{{ site.url | prepend: site.baseurl }}/assets/img/icon.png" alt="{{ site.title }}" lazyload="1"/>
         </a>
       </div>
       <nav class="flex-two text-right ldb">
