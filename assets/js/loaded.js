@@ -1,30 +1,4 @@
-/** **/
-$(function(){
-  // 快捷键翻页控制
-	$(document).keydown(function(e){
-	  var link;
-	  switch(e.keyCode){
-	    case 33:
-	    case 37:
-	      link = 'link[rel=prev]';
-	      break;
-	    case 34:
-	    case 39:
-	      link = 'link[rel=next]';
-	      break;
-	  }
-	  link = $(link);
-	  if(link.length){
-	    location.href = link.attr('href');
-	  }
-	});
-});
 (function(w, embed) {
-  // 百度统计
-  var hm = document.createElement("script");
-  hm.src = "//hm.baidu.com/hm.js?221d6affc0962df687673b64bad602fd";
-  var s = document.getElementsByTagName("script")[0];
-  s.parentNode.insertBefore(hm, s);
   // duoshuo
 	if(!document.querySelector('.ds-thread')){
 		return;
