@@ -1,0 +1,30 @@
+{
+  "name": "pale",
+  "version": "1.0.0",
+  "description": "[![Join the chat at https://gitter.im/MurphyL/Pale](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/MurphyL/Pale?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)",
+  "main": "index.js",
+  "scripts": {
+    "start": "gulp"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MurphyL/Pale.git"
+  },
+  "keywords": [
+    "Pale",
+    "MurphyL",
+    "HomePage",
+    "Blog"
+  ],
+  "author": "MurphyL",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/MurphyL/Pale/issues"
+  },
+  "homepage": "https://github.com/MurphyL/Pale#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "vue": "^2.1.10",
+    "vue-router": "^2.2.0"
+  }
+}
