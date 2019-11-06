@@ -143,10 +143,6 @@ li {
   list-style-type: none
 }
 
-dt, dd {
-  line-height: 1.5
-}
-
 dd {
   margin-left: 0
 }

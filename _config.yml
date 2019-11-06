@@ -6,7 +6,7 @@ url: "https://cijian.us"
 baseurl: ""
 paginate: 10
 
-# source: src
+source: src
 
 permalink: "/:title"
 paginate_path: "/page/:num"
@@ -20,7 +20,7 @@ author:
     github: MurphyL
     twitter: MurphyLuo
 
-gems: [jekyll-paginate]
+plugins: [jekyll-paginate]
 
 sass:
     style: compressed
