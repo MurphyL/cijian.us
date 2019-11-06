@@ -6,6 +6,8 @@ url: "https://cijian.us"
 baseurl: ""
 paginate: 10
 
+# source: src
+
 permalink: "/:title"
 paginate_path: "/page/:num"
 
