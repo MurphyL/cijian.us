@@ -2,14 +2,15 @@
 layout: default
 ---
 <main>
-  <dl class="container">{% for post in paginator.posts %}
+  <dl class="container">
+    {% for post in paginator.posts %}
     <dt>
       <a href="{{ post.url | prepend: site.baseurl }}" title="{{ post.title }}" rel="bookmark" lazyload="1" target="_blank">{{ post.title }}</a>
     </dt>
     <dd>
       <p>{{ post.content | markdownify | strip_html | strip_newlines | truncate: 160 }}</p>
     </dd>
-    </div>{% endfor %}
+    {% endfor %}
   </dl>
   <nav class="text-center">{% if paginator.page > 1 %}
     <a href="{{ paginator.previous_page_path }}" title="上一页">{{ paginator.previous_page }}</a>{% endif %}
