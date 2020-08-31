@@ -8,7 +8,7 @@ paginate: 10
 
 # source: ./src
 
-permalink: /:title
+permalink: /post/:title
 paginate_path: /page/:num
 
 excerpt_separator:  '<!-- more -->'
