@@ -10,7 +10,7 @@ excerpt: 『此间∙我们』的友情连接页面
       <a href="{{ page.url }}" class="ldb" title="{{ page.title }}" rel="bookmark">{{ page.title }}</a>
     </h2>
     <section>
-      <p>个人会根据喜好主动增加友链。本质上说，私以为友链代表的是友情，是认可，而非凭空的一句话——“换个链接”。</p>
+      <p>个人会根据喜好主动增加友链。私以为友链代表的是友情，是认可，而非凭空的一句话——“换个链接”。</p>
       <dl class="links">{% for link in site.data.links %}
         <dt>{{ link.name }}</dt>{% for item in link.items %}
         <dd><a href="{{item.link}}" title="{{ item.desc }}" target="_blank" rel="nofollow">{{ item.name }}</a></dd>{% endfor %}{% endfor %}
