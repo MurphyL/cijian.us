@@ -20,8 +20,6 @@ author:
     github: MurphyL
     twitter: MurphyLuo
 
-plugins: [jekyll-paginate]
-
 sass:
     style: compressed
 
