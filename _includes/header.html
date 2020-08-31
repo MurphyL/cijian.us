@@ -21,8 +21,7 @@
   <meta http-equiv="Cache-Control" content="no-siteapp">
   <meta property="og:site_name" content="{{ site.title }}">
   <!-- http://seanhalpin.io/ -->
-  {% capture url_prefix %}{{ site.url | append: site.baseurl }}{% endcapture %}
-  <!-- {{ url_prefix }} -->
+  {% capture url_prefix %}{{ site.url }}{{ site.baseurl }}{% endcapture %}<!-- {{ url_prefix }} -->
   <link rel="shortcut icon" href="/favicon.ico">
   <link rel="icon" type="image/png" href="/assets/img/icon.png">
   <link rel="profile" href="http://gmpg.org/xfn/11">
