@@ -2,7 +2,7 @@
 title: 此间·我们
 description: 以梦为马，诗酒趁年华~
 keywords: "日记, 生活, 诗歌, 回忆"
-url: "https://cijian.us"
+url: ""
 baseurl: ""
 paginate: 10
 
@@ -19,6 +19,8 @@ author:
     weibo: MurphyLuo
     github: MurphyL
     twitter: MurphyLuo
+
+plugins: [jekyll-paginate]
 
 sass:
     style: compressed
