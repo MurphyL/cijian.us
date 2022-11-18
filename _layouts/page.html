@@ -7,12 +7,6 @@
       </h2>
       <div id="article">{{ content }}</div>
     </div>
-    <div class="note"><!-- 多说评论框 -->
-      <div class="ds-thread"
-           data-thread-key="{{ page.id | slugify }}"
-           data-title="{{ page.title }}"
-           data-url="{{ page.url | prepend: site.baseurl | prepend: site.url }}"></div>
-    </div>
   </div>
 </section>
 {% include footer.html %}

@@ -6,9 +6,5 @@
     </h2>
     <section>{{ content }}</section>
   </article>
-  <div class="container ds-thread"
-       data-thread-key="{{ page.id | slugify }}"
-       data-title="{{ page.title }}"
-       data-url="{{ page.url | prepend: site.baseurl | prepend: site.url }}"></div>
 </main>
 {% include footer.html %}

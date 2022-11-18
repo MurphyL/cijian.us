@@ -1,10 +1,13 @@
 <!DOCTYPE html>
 <html dir="ltr" lang="zh-cmn-Hans" itemscope itemtype="http://schema.org/WebPage">
+
 <head profile="og:http://ogp.me/ns#">
   <meta charset="utf-8">
   <title>{% if page.title %}{{ page.title }} | {% endif %}{{ site.title }}</title>
-  <meta name="keywords" content="{% if page.tags %}{{ page.tags | array_to_sentence_string | | replace: 'and ', '' }}{% else %}{{ site.keywords }}{% endif %}{% if page.categories %}MurphyL, {{ page.categories | array_to_sentence_string | | replace: 'and ', '' }}{% endif %}">
-  <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 100 }}{% else %}{{ site.description }}{% endif %}">
+  <meta name="keywords"
+    content="{% if page.tags %}{{ page.tags | array_to_sentence_string | | replace: 'and ', '' }}{% else %}{{ site.keywords }}{% endif %}{% if page.categories %}MurphyL, {{ page.categories | array_to_sentence_string | | replace: 'and ', '' }}{% endif %}">
+  <meta name="description"
+    content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 100 }}{% else %}{{ site.description }}{% endif %}">
   <meta name="author" content="{{ site.author.name }}, {{ site.author.email }}">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
   <meta name="robots" content="index, follow">
@@ -21,7 +24,6 @@
   <meta http-equiv="Cache-Control" content="no-siteapp">
   <meta property="og:site_name" content="{{ site.title }}">
   <!-- http://seanhalpin.io/ -->
-  {% capture url_prefix %}{{ site.url }}{{ site.baseurl }}{% endcapture %}<!-- {{ url_prefix }} -->
   <link rel="shortcut icon" href="/favicon.ico">
   <link rel="icon" type="image/png" href="/assets/img/icon.png">
   <link rel="profile" href="http://gmpg.org/xfn/11">
@@ -29,29 +31,19 @@
   <link rel="stylesheet" href="/assets/css/font-awesome.min.css">
   <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="/feed.xml">
 </head>
-<body>
-<header>
-  <div class="container">
-    <div class="top flex">
-      <div class="logo" class="flex-one">
-        <a href="/" title="{{ site.title }}">
-          <img src="/assets/img/icon.png" alt="{{ site.title }}" lazyload="1"/>
-        </a>
-      </div>
-      <nav class="flex-two text-right ldb">
-        <a href="/links">友链</a>
-        <a href="/about">关于</a>
-      </nav>
-    </div>
-    <div class="title">
-      <div class="cloud left-cloud"></div>
-      <div class="cloud right-cloud"></div>
-      <div class="text-center color-text ldb">
-        <h1 class="">{{ site.title }}</h1>
-        <summary>养心如葵，素心如兰</summary>
-      </div>
-    </div>
-    <figure class="earth">{% include land.svg %}</figure>
-  </div>
-</header>
 
+<body>
+  <header>
+    <div class="container">
+      <div class="top flex">
+        <a class="logo flex flex-one" style="gap: 10px;" href="/" title="{{ site.title }}">
+          <img class="img" src="/assets/img/icon.png" alt="{{ site.title }}" />
+          <h1 class="ldb flex-one">{{ site.title }}</h1>
+        </a>
+        <nav class="flex-two text-right ldb">
+          <a href="/links">友链</a>
+          <a href="/about">关于</a>
+        </nav>
+      </div>
+    </div>
+  </header>

@@ -5,7 +5,7 @@ layout: default
   <dl class="container">
     {% for post in paginator.posts %}
     <dt>
-      <a href="{{ post.url | prepend: site.baseurl }}" title="{{ post.title }}" rel="bookmark" lazyload="1" target="_blank">{{ post.title }}</a>
+      <a href="{{ post.url | prepend: site.baseurl }}" title="{{ post.title }}" rel="bookmark" target="_blank">{{ post.title }}</a>
     </dt>
     <dd>
       <p>{{ post.content | markdownify | strip_html | strip_newlines | truncate: 160 }}</p>

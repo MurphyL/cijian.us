@@ -4,9 +4,5 @@
     <h2><a href="{{ page.url }}" title="{{ page.title }}" rel="bookmark">{{ page.title }}</a></h2>
     <section>{{ content | newline_to_br | strip_newlines | replace: '<br /><br />', ''}}</section>
   </article>
-  <div class="container ds-thread"
-       data-thread-key="{{ page.id | slugify }}"
-       data-title="{{ page.title }}"
-       data-url="{{ page.url | prepend: site.baseurl | prepend: site.url }}"></div>
 </main>
 {% include footer.html %}
