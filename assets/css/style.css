@@ -172,7 +172,7 @@ dd {
 }
 
 header {
-  padding-top: 28px;
+  padding: 28px 0;
 }
 
 main {
@@ -187,7 +187,6 @@ header, footer {
 .container {
   margin: 0 auto;
   width: 98%;
-  min-height: 300px;
 }
 
 .ldb {

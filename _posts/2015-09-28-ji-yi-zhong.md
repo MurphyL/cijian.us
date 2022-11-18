@@ -1,5 +1,5 @@
 ---
-layout: song
+layout: poem
 title: "记忆中"
 tags: 记忆 诗歌 初恋
 ---

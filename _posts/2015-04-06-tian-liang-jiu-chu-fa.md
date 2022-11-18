@@ -1,5 +1,5 @@
 ---
-layout: song
+layout: poem
 title:  "天亮，就出发"
 date:   2015-04-06 02:16
 categories: 诗歌 心情

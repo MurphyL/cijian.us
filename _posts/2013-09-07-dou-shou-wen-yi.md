@@ -1,5 +1,5 @@
 ---
-layout: song 
+layout: poem 
 title: "兜售文艺"
 date: 2013-09-07 20:33:49
 categories: 评论 日记 心情 大学 回忆 博客 分享

@@ -1,10 +1,14 @@
-{% include header.html %}
-<main>
-  <article class="container post">
-    <h2 class="text-center">
-      <a href="{{ page.url }}" title="{{ page.title }}" rel="bookmark">{{ page.title }}</a>
-    </h2>
-    <section>{{ content }}</section>
-  </article>
-</main>
-{% include footer.html %}
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+{% include doc-head.html %}
+<body>
+    {% include header.html %}
+    <main>
+        <h2>{{ page.title }}</h2>
+        <article>
+            {{ content }}
+        </article>
+    </main>
+    {% include footer.html %}
+</body>
+</html>

@@ -1,22 +1,23 @@
 ---
 layout: default
 ---
-<main>
-  <dl class="container">
+<dl class="container" data-total-posts="{{ paginator.total_posts }}" data-total-pages="{{ paginator.total_pages }}">
     {% for post in paginator.posts %}
     <dt>
-      <a href="{{ post.url | prepend: site.baseurl }}" title="{{ post.title }}" rel="bookmark" target="_blank">{{ post.title }}</a>
+        <a href="{{ post.url | prepend: site.baseurl }}" title="{{ post.title }}" rel="bookmark" target="_blank">{{ post.title }}</a>
     </dt>
     <dd>
-      <p>{{ post.content | markdownify | strip_html | strip_newlines | truncate: 160 }}</p>
+        <p>{{ post.content | markdownify | strip_html | strip_newlines | truncate: 160 }}</p>
     </dd>
     {% endfor %}
-  </dl>
-  <nav class="text-center">{% if paginator.page > 1 %}
-    <a href="{{ paginator.previous_page_path }}" title="上一页">{{ paginator.previous_page }}</a>{% endif %}
+</dl>
+<nav class="text-center">
+    {% if paginator.page > 1 %}
+    <a target="_self" href="{{ paginator.previous_page_path }}" title="上一页">{{ paginator.previous_page }}</a>{% endif %}
     {% if paginator.page %}
-    <a href="javascript:;" class="current pn">{{ paginator.page }}</a>{% endif %}
+    <a target="_self" href="javascript:;" class="current pn">{{ paginator.page }}</a>
+    {% endif %}
     {% if paginator.next_page %}
-    <a href="{{ paginator.next_page_path }}" title="下一页">{{ paginator.next_page }}</a>{% endif %}
-  </nav>
-</main>
+    <a target="_self" href="{{ paginator.next_page_path }}" title="下一页">{{ paginator.next_page }}</a>
+    {% endif %}
+</nav>

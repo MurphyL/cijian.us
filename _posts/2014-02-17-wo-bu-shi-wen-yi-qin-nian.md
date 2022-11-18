@@ -1,5 +1,5 @@
 ---
-layout: song 
+layout: poem 
 title: "我不是文艺青年"
 date: 2014-02-17 01:01:46
 categories: 诗歌 日记

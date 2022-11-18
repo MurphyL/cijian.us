@@ -1,5 +1,5 @@
 ---
-layout: song
+layout: poem
 title:  "静谧的声音"
 date:   2015-09-06 14:54
 categories: 诗歌 心情

@@ -1,5 +1,5 @@
 ---
-layout: song
+layout: poem
 title:  "西瓜被杀时"
 date:   2015-04-27 21:55
 categories: 诗歌 心情

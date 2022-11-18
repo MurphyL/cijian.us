@@ -1,8 +1,18 @@
-{% include header.html %}
-<main>
-  <article class="container poem text-center">
-    <h2><a href="{{ page.url }}" title="{{ page.title }}" rel="bookmark">{{ page.title }}</a></h2>
-    <section>{{ content | newline_to_br | strip_newlines | replace: '<br /><br />', ''}}</section>
-  </article>
-</main>
-{% include footer.html %}
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+{% include doc-head.html %}
+
+<body>
+    {% include header.html %}
+    <main class="poem">
+        <h2>{{ page.title }}</h2>
+        <article>
+            <section>
+                {{ content }}
+            </section>
+        </article>
+    </main>
+    {% include footer.html %}
+</body>
+
+</html>

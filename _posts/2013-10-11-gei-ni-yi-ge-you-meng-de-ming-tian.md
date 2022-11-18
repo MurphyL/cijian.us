@@ -1,5 +1,5 @@
 ---
-layout: song 
+layout: poem 
 title: "给你一个有梦的明天..."
 date: 2013-10-11 21:30:16
 categories: 心情 分享

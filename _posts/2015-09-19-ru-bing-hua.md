@@ -1,5 +1,5 @@
 ---
-layout: song
+layout: poem
 title: "另一种画风——如冰花"
 tags: 歌词 鲁冰花 亲情 感恩
 ---

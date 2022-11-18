@@ -1,3 +1,11 @@
-{% include header.html %}
-{{ content }}
-{% include footer.html %}
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+{% include doc-head.html %}
+<body>
+    {% include header.html %}
+    <main>
+        {{ content }}
+    </main>
+    {% include footer.html %}
+</body>
+</html>
