@@ -1,5 +1,5 @@
 name: "new post"
-description: "Report a problem with React DevTools. Please provide enough information that we can reproduce the problem."
+description: "new post"
 title: "new post"
 labels: ["post"]
 body:
@@ -7,7 +7,8 @@ body:
   id: "article_title"
   attributes:
     label: "Article title"
-    description: "Please do not edit this field."
+    placeholder: "new post"
+    description: "Article title"
 - type: "dropdown"
   id: "article_kind"
   attributes:
@@ -24,6 +25,6 @@ body:
   attributes:
     label: "Article content"
     placeholder: "Hello, world!"
-    description: "Please do not edit this field."
+    description: "Article content"
   validations:
     required: true
