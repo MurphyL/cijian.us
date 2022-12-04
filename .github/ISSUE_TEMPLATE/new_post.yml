@@ -1,6 +1,6 @@
 name: "new post"
 description: "new post"
-title: "new post"
+title: "Post slug"
 labels: ["post"]
 body:
 - type: input
