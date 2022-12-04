@@ -7,7 +7,7 @@ body:
   id: "article_title"
   attributes:
     label: "Article title"
-    placeholder: "new post"
+    placeholder: "Article title"
     description: "Article title"
   validations:
     required: true
