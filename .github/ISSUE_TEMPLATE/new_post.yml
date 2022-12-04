@@ -9,6 +9,8 @@ body:
     label: "Article title"
     placeholder: "new post"
     description: "Article title"
+  validations:
+    required: true
 - type: "dropdown"
   id: "article_kind"
   attributes:
