@@ -1,0 +1,26 @@
+name: "new post"
+description: "Report a problem with React DevTools. Please provide enough information that we can reproduce the problem."
+title: "[DevTools Bug]: "
+labels: ["Component: Developer Tools", "Type: Bug", "Status: Unconfirmed"]
+body:
+- type: "dropdown"
+  id: "article_kind"
+  attributes:
+    label: "Article kind"
+    description: "article, poem"
+    options:
+      - article
+      - poem
+  validations:
+    required: true
+- type: input
+  id: "article_title"
+  attributes:
+    label: "Article title"
+    description: "Please do not edit this field."
+- type: "textarea"
+  id: "article_content"
+  attributes:
+    label: "Article content"
+    description: "Please do not edit this field."
+    render: "text"
