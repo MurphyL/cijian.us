@@ -9,7 +9,7 @@ export default function BlogPost() {
     const post = useMemo(() => db({ slug }).first(), [slug, db]);
     if (post) {
         return (
-            <article className={post.layout || 'post'}>
+            <article className={post.layout || 'post'} data-filename={post.filepath}>
                 <h2>{post.title}</h2>
                 <PostContent layout={post.layout} content={post.content} />
             </article>

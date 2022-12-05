@@ -2,7 +2,10 @@ import fs from 'node:fs';
 import path from 'node:path';
 import { default as matter } from 'gray-matter';
 
-fs.readdir('./_posts', (err, files) => {
+const POST_ROOT = './res/_post';
+
+
+fs.readdir(POST_ROOT, (err, files) => {
     if (err) {
         return console.error('Read file error:', err);
     }
@@ -10,7 +13,7 @@ fs.readdir('./_posts', (err, files) => {
     const posts = [];
     const DATE_PATTERN = /^\d{4}-\d{2}-\d{2}/;
     files.forEach(filename => {
-        const parsed = matter.read(`./_posts/${filename}`);
+        const parsed = matter.read(`${POST_ROOT}/${filename}`);
         const meta = parsed.data;
         const content = parsed.content.trim();
         const basename = path.basename(parsed.path, '.md');
