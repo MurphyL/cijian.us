@@ -6,10 +6,11 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "prebuild": "npm run posts",
-    "posts": "node .script/markdown-transform.mjs"
+    "prebuild": "npm run transform",
+    "transform": "node .script/data-transform.mjs"
   },
   "dependencies": {
+    "dayjs": "^1.11.6",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-markdown": "^8.0.4",

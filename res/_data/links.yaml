@@ -1,0 +1,22 @@
+- name: 友情@我们
+  items:
+  - name: 咚门
+    link: 'http://www.dearzd.com/'
+    desc: 安静的下午，浓郁的树荫，稀疏的阳光，一人，一书～
+  - name: 闻心阁
+    link: 'http://blog.yqc.im/'
+    desc: 一蓑烟雨看苍生，半壶浊酒笑红尘
+- name: 链接@此间
+  items:
+  - name: Aladd
+    link: 'http://aladd.net/'
+    desc: 高品质设计、艺术、摄影、教程、插画类的分享平台
+  - name: 后时代
+    link: 'http://houshidai.com/'
+    desc: '科学与艺术在山脚下分手,在山顶会合。'
+  - name: 善用佳软
+    link: 'http://xbeta.info/'
+    desc: 分享优秀软件，尤其注重分享“替代盗版，提升效率”的经验。
+  - name: 英雄无敌
+    link: 'http://diystar.cnblogs.com/'
+    desc: ''

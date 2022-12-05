@@ -9,7 +9,8 @@ body {
 }
 
 #root a:hover {
-    color: #08f;;
+    color: #08f;
+    ;
 }
 
 #root .container {
@@ -32,30 +33,54 @@ body {
     text-align: right;
 }
 
-#root main .page-navi .page-num {
+#root header .container .navi a {
+    margin: 0 1rem;
+}
+
+#root main .container {
+    display: flex;
+    gap: 10px;
+}
+
+#root main .container .stage {
+    flex: 1;
+}
+
+#root main .container .aside {
+    width: 280px;
+}
+
+#root main .container .stage .page-navi .page-num {
     margin: 0 5px;
 }
 
-#root main article.poem h2 {
+#root main .container .stage article.poem h2 {
     text-align: center;
 }
 
-#root main article.poem pre.content {
+#root main .container .stage article .content {
+    font-family: -apple-system, SF UI Text, Arial, PingFang SC, Hiragino Sans GB, Microsoft YaHei, WenQuanYi Micro Hei, sans-serif;
+    line-height: 1.7rem;
+}
+
+#root main .container .stage article.poem pre.content {
     margin: 0 auto;
     width: fit-content;
 }
 
-#root main article.poem pre.content blockquote {
+#root main .container .stage article.poem pre.content blockquote {
     margin: 0;
     padding-left: 2rem;
     border-left: 5px solid rgba(0, 0, 0, 0.1);
 }
 
-#root main article.poem pre.content p,
-#root main article.poem pre.content blockquote>p {
+#root main .container .stage article.poem pre.content p,
+#root main .container .stage article.poem pre.content blockquote>p {
     margin: 0;
 }
 
 #root footer .container {
+    margin-top: 2rem;
     text-align: center;
+    line-height: 2rem;
 }

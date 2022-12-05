@@ -6,7 +6,7 @@ import { PostContent } from "./blog-post";
 
 export default function MarkdownPage({ slug }) {
     const db = useOutletContext();
-    const page = useMemo(() => db({ slug }).first(), [slug, db]);
+    const page = useMemo(() => db({ source: 'markdown', slug }).first(), [slug, db]);
     console.log(slug);
     return (
         <article>

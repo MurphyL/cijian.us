@@ -1,24 +1,38 @@
-import { Fragment } from "react";
+import { Fragment, useMemo } from "react";
 import { Link, Outlet } from "react-router-dom";
+
+// import Sidebar from "../../widget/sidebar";
 
 import './blog-loyout.css';
 
-export default function BlogLayout({ context }) {
+export default function BlogLayout({ posts }) {
+    // const tags = useMemo(() => posts({ kind: 'tags' }).first(), [posts]);
+    // console.log(tags.items);
     return (
         <Fragment>
             <header>
                 <Container>
                     <figure className="logo">
-                        <Link to="/">{ document.title }</Link>
+                        <Link to="/">{document.title}</Link>
                     </figure>
                     <nav className="navi">
+                        <Link to="/achive">归档</Link>
                         <Link to="/about">关于</Link>
                     </nav>
                 </Container>
             </header>
             <main>
                 <Container>
-                    <Outlet context={context} />
+                    <div className="stage">
+                        <Outlet context={posts} />
+                    </div>
+                    {/* <dl className="aside">
+                        <Sidebar title="标签">
+                            {tags.items.map((tag, index) => (
+                                <Link key={index}>{tag}</Link>
+                            ))}
+                        </Sidebar>
+                    </dl> */}
                 </Container>
             </main>
             <footer>
