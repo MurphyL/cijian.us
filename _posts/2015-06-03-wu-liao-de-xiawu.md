@@ -1,10 +1,10 @@
 ---
 layout: poem
-title:  "无聊的下午"
-date:   2015-06-03 17:54
-categories: 诗歌 心情
+title: 无聊的下午
+tags:
+  - 诗歌
+  - 心情
 ---
-
 上班，无聊。作诗，排解……
 
 ---

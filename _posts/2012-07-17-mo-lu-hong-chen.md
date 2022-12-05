@@ -1,10 +1,8 @@
 ---
-layout: post 
-title: "陌路红尘"
-date: 2012-07-17 14:33:01
-categories: 
+layout: post
+title: 陌路红尘
+tags: []
 ---
-
 红尘滚滚路相知
 烟雨蒙蒙醉姻缘
 杨柳春风拂袖去

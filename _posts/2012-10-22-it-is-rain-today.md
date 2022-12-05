@@ -1,10 +1,10 @@
 ---
-layout: post 
-title: "下雨了，今天！"
-date: 2012-10-22 08:59:44
-categories: 心情 回忆
+layout: post
+title: 下雨了，今天！
+tags:
+  - 心情
+  - 回忆
 ---
-
 咖啡色的夕阳
 薄荷味的笑……
 多美妙的形容词

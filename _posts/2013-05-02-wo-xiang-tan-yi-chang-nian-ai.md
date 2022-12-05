@@ -1,10 +1,10 @@
 ---
-layout: post 
-title: "我想谈一场真真正正的恋爱"
-date: 2013-05-02 12:17:32
-categories: 心情 分享
+layout: post
+title: 我想谈一场真真正正的恋爱
+tags:
+  - 心情
+  - 分享
 ---
-
 我想谈一场真真正正的恋爱
 
 我妈同意

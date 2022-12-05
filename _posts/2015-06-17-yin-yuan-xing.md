@@ -1,10 +1,9 @@
 ---
 layout: poem
-title:  "樱园行"
-date:   2015-06-17 09:11
-categories: jekyll
+title: 樱园行
+tags:
+  - 诗歌
 ---
-
 兰若生春夏，
 芊蔚何青青。
 敢言丛中过，

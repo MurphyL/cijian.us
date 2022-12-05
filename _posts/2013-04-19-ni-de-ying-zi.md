@@ -1,10 +1,10 @@
 ---
-layout: poem 
-title: "你的影子"
-date: 2013-04-19 21:28:40
-categories: 心情
+layout: poem
+title: 你的影子
+tags:
+  - 心情
+  - 诗歌
 ---
-
 我不喜欢一个人
 却坚持着一个人
 因为，还念着一个人

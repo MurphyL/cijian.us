@@ -1,23 +1,29 @@
----
-layout: default
----
-<dl class="container" data-total-posts="{{ paginator.total_posts }}" data-total-pages="{{ paginator.total_pages }}">
-    {% for post in paginator.posts %}
-    <dt>
-        <a href="{{ post.url | prepend: site.baseurl }}" title="{{ post.title }}" rel="bookmark" target="_blank">{{ post.title }}</a>
-    </dt>
-    <dd>
-        <p>{{ post.content | markdownify | strip_html | strip_newlines | truncate: 160 }}</p>
-    </dd>
-    {% endfor %}
-</dl>
-<nav class="text-center">
-    {% if paginator.page > 1 %}
-    <a target="_self" href="{{ paginator.previous_page_path }}" title="上一页">{{ paginator.previous_page }}</a>{% endif %}
-    {% if paginator.page %}
-    <a target="_self" href="javascript:;" class="current pn">{{ paginator.page }}</a>
-    {% endif %}
-    {% if paginator.next_page %}
-    <a target="_self" href="{{ paginator.next_page_path }}" title="下一页">{{ paginator.next_page }}</a>
-    {% endif %}
-</nav>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <link rel="shortcut icon" href="/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>此间·我们</title>
+    <meta name="description" content="以梦为马，诗酒趁年华">
+    <meta name="author" content="MurphyL, murphyl@outlook.com">
+    <meta name="robots" content="index,follow">
+    <meta name="referrer" content="always">
+    <meta name="force-rendering" content="webkit">
+    <meta name="format-detection" content="telphone=no,email=no">
+    <meta name="google" content="notranslate">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta http-equiv="cleartype" content="on">
+    <meta http-equiv="Cache-Control" content="no-transform">
+    <meta http-equiv="Cache-Control" content="no-siteapp">
+    <meta name="apple-mobile-web-app-title" content="此间·我们">
+    <meta property="og:type" content="book" />
+    <meta property="og:site_name" content="此间·我们">
+    <meta property="og:author" content="MurphyL" />
+    <meta property="og:description" content="以梦为马，诗酒趁年华" />
+</head>
+<body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+</body>
+</html>

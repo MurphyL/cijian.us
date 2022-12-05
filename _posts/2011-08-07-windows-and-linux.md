@@ -1,10 +1,11 @@
 ---
-layout: post 
-title: "Linux像老婆，Windows像妓女"
-date: 2011-08-07 12:51:20
-categories: 文字 分享 Windows Linux
+layout: post
+title: Linux像老婆，Windows像妓女
+tags:
+  - 分享
+  - Windows
+  - Linux
 ---
-
 1. 首先，Linux是免费的，和老婆上床当然不用要钱，妓女和Windows 都是要money的啊。
 
 2. Linux入门比较难，就象你当初追你lp的那些日子，痛并快乐着。Windows？傻子都会用，就象妓女，给钱就可以了，即使你阳痿她还可以用嘴哦，当然你得多付钱才可以。

@@ -1,10 +1,11 @@
 ---
-layout: poem 
-title: "是夜无月"
-date: 2014-06-12 22:08:07
-categories: 诗歌 日记 心情
+layout: poem
+title: 是夜无月
+tags:
+  - 诗歌
+  - 日记
+  - 心情
 ---
-
 是夜无月
 地面不再斑驳
 是夜无月

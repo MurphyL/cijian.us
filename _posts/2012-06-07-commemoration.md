@@ -1,10 +1,8 @@
 ---
-layout: post 
-title: "念"
-date: 2012-06-07 14:02:27
-categories: 
+layout: post
+title: 念
+tags: []
 ---
-
 清风吹布衣，
 白璧寄相思。
 与君同来日，

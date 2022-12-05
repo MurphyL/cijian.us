@@ -1,10 +1,8 @@
 ---
-layout: post 
-title: "一个人"
-date: 2011-07-26 21:50:56
-categories: 文字
+layout: poem
+title: 一个人
+tags: []
 ---
-
 一个人的天空很蓝
 蓝得有点忧虑
 一个人的时候很自由

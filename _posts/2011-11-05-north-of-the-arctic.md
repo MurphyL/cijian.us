@@ -1,10 +1,11 @@
 ---
-layout: post 
-title: "北极以北～"
-date: 2011-11-05 21:14:50
-categories: 日记 心情 分享
+layout: post
+title: 北极以北～
+tags:
+  - 日记
+  - 心情
+  - 分享
 ---
-
 北极以北
 那里是我的思念
 南极之南

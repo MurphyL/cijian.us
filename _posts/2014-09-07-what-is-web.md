@@ -1,10 +1,14 @@
 ---
-layout: post 
-title: "歪解Web前端"
-date: 2014-09-07 00:49:24
-categories: 编程 Web JavaScript HTML5 HTML CSS
+layout: post
+title: 歪解Web前端
+tags:
+  - 编程
+  - Web
+  - JavaScript
+  - HTML5
+  - HTML
+  - CSS
 ---
-
 最近带了个几乎是零基础的新人，给她解释HTML、CSS、JavaScript的时候可谓是绞尽了脑汁。之所以这样说倒不是因为我拙于表达什么，毕竟对方是个妹子，说什么超文本标记语言（HyperText Markup Language —— HTML）太那个什么了。但是细下来一想，要想说清楚到底是怎么回事儿还真有点困难。
 
 事后回想，当时的解释还是比较好玩的：HTML就是个盘子，没有任何装饰。我们可以用它来盛放各类果品 —— 糖果、水果、干果…我们利用HTML要做的是把各种果品打造成为一个精美的拼盘。然而各种果品的“玉体横陈”是无法做到真正的精美的，这时我们就需要CSS来让果品“竖陈”，甚至“斜陈”、“叠放”…各种摆放方式就是通常所说的布局。利用CSS，我们还可以给果品增加包装纸、缀饰。最后，JavaScript是给我们的拼盘渲染气氛的。有了JavaScript，我们的拼盘的逼格往上一跃，径直蹿升为艺术品。

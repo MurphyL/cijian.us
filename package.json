@@ -1,0 +1,25 @@
+{
+  "name": "cijian.us",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "prebuild": "npm run posts",
+    "posts": "node .script/markdown-transform.mjs"
+  },
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-markdown": "^8.0.4",
+    "react-router-dom": "^6.4.4",
+    "recoil": "^0.7.6",
+    "taffydb": "^2.7.3"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^2.2.0",
+    "gray-matter": "^4.0.3",
+    "vite": "^3.2.3"
+  }
+}

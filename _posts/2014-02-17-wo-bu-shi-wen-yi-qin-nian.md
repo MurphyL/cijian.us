@@ -1,10 +1,10 @@
 ---
-layout: poem 
-title: "我不是文艺青年"
-date: 2014-02-17 01:01:46
-categories: 诗歌 日记
+layout: poem
+title: 我不是文艺青年
+tags:
+  - 诗歌
+  - 日记
 ---
-
 突然发现
 我是一个被大家宠坏了的孩子
 我并不是一个文艺青年

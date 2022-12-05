@@ -1,10 +1,13 @@
 ---
-layout: poem 
-title: "近作两首"
-date: 2014-06-07 01:55:17
-categories: 读书 诗歌 心情 回忆 咆哮
+layout: poem
+title: 近作两首
+tags:
+  - 读书
+  - 诗歌
+  - 心情
+  - 回忆
+  - 咆哮
 ---
-
 ### 登楼
 
 等闲自任晚霞风

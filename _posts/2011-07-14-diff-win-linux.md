@@ -1,10 +1,8 @@
 ---
-layout: post 
-title: "浅谈Windows与Linux的文化差异 ～"
-date: 2011-07-14 22:37:21
-categories: 文字
+layout: post
+title: 浅谈Windows与Linux的文化差异 ～
+tags: []
 ---
-
 写在最前面的几点说明：
 1：本文的所有内容仅仅是陈述个人观点，意不在分说孰优孰劣——本人的电脑系统为 Win7 Pro + Debian i386；
 2：言语之间可能带有个人感情色彩，但绝无主观倾向——恰如很多人对待QQ。
