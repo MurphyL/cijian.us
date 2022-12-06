@@ -1,23 +1,32 @@
 import { createElement, useMemo } from 'react';
 import { Link, useOutletContext, useParams } from 'react-router-dom';
 
+import mingo from "mingo";
+
 import dayjs from 'dayjs';
 
 import Markdown from 'react-markdown';
 
 export default function BlogPost() {
     const { slug } = useParams();
-    const db = useOutletContext();
+    const blog = useOutletContext();
+    // const { post } = useMemo(() => {
+    //     const result = db({ kind: 'post', slug }).first();
+    //     if (!result) {
+    //         return { post: false };
+    //     }
+    //     const tags = result.tags;
+    //     const x = db({ kind: 'post', slug: { '!is': slug } }, tags.map(tag => ({ tags: { has: tag } }))).limit(5).get()
+    //     console.log(tags, x);
+    //     return { post: result };
+    // }, [slug, db]);
     const { post } = useMemo(() => {
-        const result = db({ kind: 'post', slug }).first();
+        const [result] = mingo.find(blog, { kind: 'post', slug }).limit(1).all();
         if (!result) {
             return { post: false };
         }
-        const tags = result.tags;
-        const x = db({ kind: 'post', slug: { '!is': slug } }, tags.map(tag => ({ tags: { has: tag } }))).limit(5).get()
-        console.log(tags, x);
         return { post: result };
-    }, [slug, db]);
+    }, [slug, blog]);
     if (post) {
         return (
             <article className={post.layout || 'post'} data-filename={post.filepath}>
@@ -68,9 +77,9 @@ export function DateLinks({ value = '' }) {
         const month = parsed.format('MM')
         const date = parsed.format('DD')
         return [
-            createElement(Link, {to: `/posts?publishYear=${year}`}, year), 
-            createElement(Link, {to: `/posts?publishMonth=${year}-${month}`}, month), 
-            createElement(Link, {to: `/posts?publishYear=${value}`}, date), 
+            createElement(Link, { to: `/posts?publishYear=${year}` }, year),
+            createElement(Link, { to: `/posts?publishMonth=${year}-${month}` }, month),
+            createElement(Link, { to: `/posts?publishYear=${value}` }, date),
         ]
     }, [value]);
     return (

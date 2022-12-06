@@ -1,21 +1,22 @@
 import { Fragment, useMemo } from "react";
 import { Link, useOutletContext, useParams, useSearchParams } from "react-router-dom";
 
+import mingo from "mingo";
+
 export default function BlogList({ filters, pageable = false }) {
-    const db = useOutletContext();
+    const blog = useOutletContext();
     const { posts, totalPage, currentPage } = useMemo(() => {
         const pageSize = 10;
         const { pageNum, ...queryParams } = filters;
-        const query = db(queryParams);
-        const totalElements = query.count();
+        const totalElements = mingo.find(blog, queryParams).count();
+        const posts = mingo.find(blog, queryParams).sort({ publishAt: -1 }).skip((pageNum - 1) * pageSize).limit(pageSize);
         return {
             totalElements,
+            posts: posts.all(),
             currentPage: pageNum,
             totalPage: Math.ceil(totalElements / pageSize),
-            posts: query.order('publishAt desc').start((pageNum - 1) * pageSize).limit(pageSize).get(),
-
         };
-    }, [db, filters]);
+    }, [blog, filters]);
     return (
         <Fragment>
             <dl className="posts-list">
@@ -49,7 +50,6 @@ export default function BlogList({ filters, pageable = false }) {
 
 export function PostPage() {
     const { num } = useParams();
-    const db = useOutletContext();
     return (
         <BlogList filters={{ pageNum: parseInt(num) }} pageable={true} />
     );

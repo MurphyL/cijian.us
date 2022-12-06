@@ -4,21 +4,19 @@ import { Link, useOutletContext } from 'react-router-dom';
 import dayjs from 'dayjs';
 
 export default function BlogActive() {
-    const db = useOutletContext();
+    const posts = useOutletContext();
     const groups = useMemo(() => {
-        const posts = db({ kind: 'post' }).order('publishAt').get();
+        // const posts = db({ kind: 'post' }).order('publishAt').get();
         const result = {};
-        if (posts) {
-            posts.forEach(post => {
-                const publishMonth = dayjs(post.publishAt).format('YYYY-MM')
-                if (!result[publishMonth]) {
-                    result[publishMonth] = [];
-                }
-                result[publishMonth].push(post);
-            })
-        }
+        posts.forEach(post => {
+            const publishMonth = dayjs(post.publishAt).format('YYYY-MM')
+            if (!result[publishMonth]) {
+                result[publishMonth] = [];
+            }
+            result[publishMonth].push(post);
+        })
         return result;
-    }, [db]);
+    }, [posts]);
     return (
         <dl>
             {Object.entries(groups).map(([group, posts]) => (
