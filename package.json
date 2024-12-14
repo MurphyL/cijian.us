@@ -10,18 +10,19 @@
     "transform": "node .script/data-transform.mjs"
   },
   "dependencies": {
+    "axios": "^1.7.9",
     "dayjs": "^1.11.6",
-    "mingo": "^6.1.2",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "react-markdown": "^8.0.4",
-    "react-router-dom": "^6.4.4",
-    "recoil": "^0.7.6",
-    "taffydb": "^2.7.3"
+    "lodash": "^4.17.21",
+    "pinia": "^2.3.0",
+    "taffydb": "^2.7.3",
+    "vue": "^3.5.13",
+    "vue-router": "^4.5.0"
   },
   "devDependencies": {
-    "@vitejs/plugin-react": "^2.2.0",
+    "@vitejs/plugin-vue": "^5.2.1",
     "gray-matter": "^4.0.3",
-    "vite": "^3.2.3"
+    "less": "^4.2.1",
+    "marked": "^15.0.3",
+    "vite": "^6.0.3"
   }
 }
